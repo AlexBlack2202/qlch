@@ -1,0 +1,82 @@
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Administrator\Desktop\A2W\a2w\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Source\A2W\a2w\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+D:\Works\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Minh\Desktop\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Administrator\Desktop\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+X:\Works\Freelance\CSharp\A4U\Source\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+D:\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+D:\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+D:\Adlog-Install\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+D:\Adlog-Install\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+D:\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+D:\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+D:\Adlog-Install\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+D:\Work\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\Adlog ASP PU_09-08-2017\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U PU\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.csproj.CoreCompileInputs.cache
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+D:\Work\Adlog ASP\Adlog ASP_15.08.2017\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll.config
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\A4ULtd.Lib.Data.pdb
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\bin\Release\MySql.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.dll
+C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\Adlog\A4ULtd.Lib.Data\obj\Release\A4ULtd.Lib.Data.pdb

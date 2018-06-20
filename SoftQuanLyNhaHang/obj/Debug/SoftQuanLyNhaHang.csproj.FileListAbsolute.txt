@@ -1,0 +1,129 @@
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctBan.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctGoiMon.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhachHang.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhuVuc.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctLoaiThucDon.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctMonDaGoi.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctNhanVien.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThucDon.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctChiTietGoiMon.resources
+D:\Lập trình\LT CSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmThanhToan.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctBan.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctDanhSachTD.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctGoiMon.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhachHang.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhuVuc.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctLoaiThucDon.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctMonDaGoi.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctNhanVien.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThucDon.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\RdlCompile.cache
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\RdlCompile.compiled
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPhanQuyen.resources
+D:\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctSearchNhanVien.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmThanhToan.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctBan.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctDanhSachTD.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctGoiMon.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhachHang.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhuVuc.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctLoaiThucDon.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctMonDaGoi.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctNhanVien.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPhanQuyen.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctSearchNhanVien.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThucDon.resources
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\RdlCompile.cache
+D:\Lap Trinh\LTCSDL\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\RdlCompile.compiled
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmThanhToan.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctBan.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctDanhSachTD.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctGoiMon.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhachHang.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhuVuc.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctLoaiThucDon.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctMonDaGoi.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctNhanVien.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPhanQuyen.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctSearchNhanVien.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThucDon.resources
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Hoa Huong\Desktop\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmThanhToan.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctBan.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctDanhSachTD.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctGoiMon.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhachHang.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctKhuVuc.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctLoaiThucDon.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctMonDaGoi.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctNhanVien.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPhanQuyen.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctSearchNhanVien.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThucDon.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctOutputVoucher.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctInputVoucher.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctproduct.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.pdb
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctCustomerRepaid.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctProductDestroy.resources
