@@ -8,7 +8,7 @@ namespace SoftQuanLyNhaHang.Models
 {
     public class ProductBO
     {
-        public long ProductID { get; set; }
+        public string ProductID { get; set; }
         public string ProductName { get; set; }
         public double SellPrice { get; set; }
     }

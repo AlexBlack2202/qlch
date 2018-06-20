@@ -37,6 +37,29 @@ namespace SoftQuanLyNhaHang.Controllers
             return true;
         }
 
+        public bool UpdateProductSellPrice(string strbarcode, double sellprice)
+        {
+
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_product_updatesellprice");
+                objData.AddParameter("@productid", strbarcode);
+                objData.AddParameter("@sellprice", sellprice);
+                objData.ExecStoreToString();
+            }
+            catch (Exception objEx)
+            {
+                return false;
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return true;
+        }
+
         public long InputVoucherAdd(int intcreateduserid, int intinputtype)
         {
 
@@ -108,32 +131,39 @@ namespace SoftQuanLyNhaHang.Controllers
             return -1;
         }
 
-        //public long InputVoucherDetailAdd(DataTable tableData, long linputvoucherid)
-        //{
-        //    string productid; long inputvoucherid; double quantity; double retailprice;
-        //    try
-        //    { 
-        //        objData.Connect();
-        //        objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
-        //        objData.AddParameter("@productid", productid);
-        //        objData.AddParameter("@inputvoucherid", inputvoucherid);
-        //        objData.AddParameter("@quantity", quantity);
-        //        objData.AddParameter("@price", retailprice);
-        //        string strValue = objData.ExecStoreToString();
+        public bool InputVoucherDetailAdd(DataTable tableData, long linputvoucherid)
+        {
 
-        //        return Convert.ToInt64(strValue);
-        //    }
-        //    catch (Exception objEx)
-        //    {
-        //        return -1;
-        //    }
-        //    finally
-        //    {
-        //        objData.Disconnect();
-        //    }
+            try
+            {
+                objData.BeginTransaction();
 
-        //    return -1;
-        //}
+                for (int intRow = 0; intRow < tableData.Rows.Count; intRow++)
+                {
+                    string strProductID = tableData.Rows[intRow]["productid"].ToString();
+                    double dbQuantity = Convert.ToDouble(tableData.Rows[intRow]["quantity"].ToString());
+                    double dbRetailPrice = Convert.ToDouble(tableData.Rows[intRow]["retailprice"].ToString());
+
+                    objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
+                    objData.AddParameter("@productid", strProductID);
+                    objData.AddParameter("@inputvoucherid", linputvoucherid);
+                    objData.AddParameter("@quantity", dbQuantity);
+                    objData.AddParameter("@price", dbRetailPrice);
+                    string strValue = objData.ExecStoreToString();
+                }
+                objData.CommitTransaction();
+            }
+            catch (Exception objEx)
+            {
+                return false;
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return true;
+        }
 
         public long OutputVoucherDetailAdd(string productid, long outvoucherid, double quantity, double retailprice)
         {

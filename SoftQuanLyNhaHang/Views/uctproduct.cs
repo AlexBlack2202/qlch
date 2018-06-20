@@ -156,6 +156,10 @@ namespace SoftQuanLyNhaHang.Views
                 MessageBox.Show("Có lỗi trong quá trình thêm dữ liệu");
                 return;
             }
+            else
+            {
+                MessageBox.Show("Cập nhật thành công");
+            }
 
             textBoxProductIDEditPrice.Text = "";
             labelProductNameEdit.Text = "";

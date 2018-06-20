@@ -105,5 +105,32 @@ namespace SoftQuanLyNhaHang.Views
                 e.Handled = true;
             }
         }
+
+        private void buttonPrintInvoice_Click(object sender, EventArgs e)
+        {
+            ProductDAO productDAO = new ProductDAO();
+            long inputvoucherid = productDAO.InputVoucherAdd(1, 1);
+            if (inputvoucherid == -1)
+            {
+                MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it");
+                return;
+            }
+            DataTable dt = new DataTable();
+            dt = (DataTable)dgvDanhSachSanPham.DataSource;
+
+            bool result = productDAO.InputVoucherDetailAdd(dt, inputvoucherid);
+
+            if (!result)
+            {
+                MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it để biết chi tiết");
+                return;
+            }
+
+            else
+            {
+                MessageBox.Show("Tạo phiếu xuất thành công");
+                return;
+            }
+        }
     }
 }
