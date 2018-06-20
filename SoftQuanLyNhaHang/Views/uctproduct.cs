@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using SoftQuanLyNhaHang.Controllers;
+using SoftQuanLyNhaHang.Models;
 
 namespace SoftQuanLyNhaHang.Views
 {
@@ -35,7 +36,7 @@ namespace SoftQuanLyNhaHang.Views
         {
 
         }
-       
+
 
         //private void dgvDanhSachNV_Click(object sender, EventArgs e)
         //{
@@ -79,12 +80,12 @@ namespace SoftQuanLyNhaHang.Views
         private void btnFind_Click(object sender, EventArgs e)
         {
             uctSearchNhanVien uctS = new uctSearchNhanVien();
-           
+
         }
 
         private void btnHide_Click(object sender, EventArgs e)
         {
-           
+
         }
 
 
@@ -94,22 +95,35 @@ namespace SoftQuanLyNhaHang.Views
             string strproductname = txproductname.Text;
 
             double dbSellPrice = -1;
-
+            if (string.IsNullOrEmpty(strBarcode))
+            {
+                MessageBox.Show("Mã barcode không hợp lệ");
+                return;
+            }
             if (string.IsNullOrEmpty(textBoxSellPrice.Text) || !double.TryParse(textBoxSellPrice.Text, out dbSellPrice))
             {
                 MessageBox.Show("Giá bán không hợp lệ");
                 return;
             }
 
-            if (!string.IsNullOrEmpty(strBarcode) && !string.IsNullOrEmpty(strproductname))
+            if (string.IsNullOrEmpty(strproductname))
             {
-                bool result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice);
-
-                if (!result)
-                {
-                    MessageBox.Show("Có lỗi trong quá trình thêm dữ liệu");
-                }
+                MessageBox.Show("Tên sản phẩm không hợp lệ");
+                return;
             }
+
+            bool result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice);
+
+            if (!result)
+            {
+                MessageBox.Show("Có lỗi trong quá trình thêm dữ liệu");
+                return;
+            }
+
+            txtbarcode.Text = "";
+            txproductname.Text = "";
+
+            textBoxSellPrice.Text = "-1";
 
 
         }
@@ -121,6 +135,34 @@ namespace SoftQuanLyNhaHang.Views
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+            if (curProductBO == null)
+            {
+                MessageBox.Show("Mã sản phẩm hiện tại không hợp lệ");
+                return;
+            }
+
+            double dbSellPrice = -1;
+
+            if (string.IsNullOrEmpty(textBoxRetailPriceEdit.Text) || !double.TryParse(textBoxRetailPriceEdit.Text, out dbSellPrice))
+            {
+                MessageBox.Show("Giá bán không hợp lệ");
+                return;
+            }
+
+            bool result = new Controllers.ProductDAO().UpdateProductSellPrice(curProductBO.ProductID, dbSellPrice);
+
+            if (!result)
+            {
+                MessageBox.Show("Có lỗi trong quá trình thêm dữ liệu");
+                return;
+            }
+
+            textBoxProductIDEditPrice.Text = "";
+            labelProductNameEdit.Text = "";
+
+            textBoxRetailPriceEdit.Text = "-1";
+
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -129,6 +171,33 @@ namespace SoftQuanLyNhaHang.Views
         }
 
         private void grQuanLyNV_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        ProductBO curProductBO = null;
+        private void textBoxProductIDEditPrice_TextChanged(object sender, EventArgs e)
+        {
+            string strBarCode = textBoxProductIDEditPrice.Text;
+
+            if (!string.IsNullOrEmpty(strBarCode))
+            {
+                ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
+
+                if (objProductBO != null)
+                {
+                    labelProductNameEdit.Text = objProductBO.ProductName;
+                    curProductBO = objProductBO;
+                }
+            }
+        }
+
+        private void labelProductName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtbarcode_TextChanged(object sender, EventArgs e)
         {
 
         }
