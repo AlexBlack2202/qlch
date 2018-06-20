@@ -112,7 +112,7 @@ namespace SoftQuanLyNhaHang.Controllers
         {
             string productid; long inputvoucherid; double quantity; double retailprice;
             try
-            {
+            { 
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
                 objData.AddParameter("@productid", productid);
