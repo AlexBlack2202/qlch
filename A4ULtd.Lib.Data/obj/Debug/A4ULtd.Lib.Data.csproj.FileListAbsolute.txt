@@ -84,10 +84,12 @@ C:\Users\Hoang Phu\Desktop\A4U ADLOG Source Code\Adlog ASP\Adlog ASP\Adlog ASP\A
 D:\Adlog-Install\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CoreCompileInputs.cache
 D:\Adlog-Install\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CopyComplete
 D:\Adlog-Install\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojAssemblyReference.cache
-C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.dll
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll.config
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\MySql.Data.dll
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojAssemblyReference.cache
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CoreCompileInputs.cache
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CopyComplete

@@ -79,7 +79,7 @@ namespace SoftQuanLyNhaHang.Controllers
             return -1;
         }
 
-      
+
 
         public long InputVoucherDetailAdd(string productid, long inputvoucherid, double quantity, double retailprice)
         {
@@ -108,32 +108,32 @@ namespace SoftQuanLyNhaHang.Controllers
             return -1;
         }
 
-        public long InputVoucherDetailAdd(DataTable tableData, long linputvoucherid)
-        {
-            string productid; long inputvoucherid; double quantity; double retailprice;
-            try
-            { 
-                objData.Connect();
-                objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
-                objData.AddParameter("@productid", productid);
-                objData.AddParameter("@inputvoucherid", inputvoucherid);
-                objData.AddParameter("@quantity", quantity);
-                objData.AddParameter("@price", retailprice);
-                string strValue = objData.ExecStoreToString();
+        //public long InputVoucherDetailAdd(DataTable tableData, long linputvoucherid)
+        //{
+        //    string productid; long inputvoucherid; double quantity; double retailprice;
+        //    try
+        //    { 
+        //        objData.Connect();
+        //        objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
+        //        objData.AddParameter("@productid", productid);
+        //        objData.AddParameter("@inputvoucherid", inputvoucherid);
+        //        objData.AddParameter("@quantity", quantity);
+        //        objData.AddParameter("@price", retailprice);
+        //        string strValue = objData.ExecStoreToString();
 
-                return Convert.ToInt64(strValue);
-            }
-            catch (Exception objEx)
-            {
-                return -1;
-            }
-            finally
-            {
-                objData.Disconnect();
-            }
+        //        return Convert.ToInt64(strValue);
+        //    }
+        //    catch (Exception objEx)
+        //    {
+        //        return -1;
+        //    }
+        //    finally
+        //    {
+        //        objData.Disconnect();
+        //    }
 
-            return -1;
-        }
+        //    return -1;
+        //}
 
         public long OutputVoucherDetailAdd(string productid, long outvoucherid, double quantity, double retailprice)
         {
@@ -176,6 +176,72 @@ namespace SoftQuanLyNhaHang.Controllers
                 return objTable.ToList<ProductBO>().First();
             }
             catch
+            {
+                return null;
+            }
+
+
+        }
+
+
+        public DataTable GetInventory()
+        {
+
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("bi_etl_inventory_getall");
+
+                DataTable objTable = objData.ExecStoreToDataTable();
+
+                return objTable;
+            }
+            catch (Exception objEx)
+            {
+                return null;
+            }
+
+
+        }
+
+        public DataTable GetReportOutputByDate(DateTime dtBeginDate)
+        {
+            dtBeginDate = dtBeginDate.Date;
+            DateTime dtEndDate = dtBeginDate.AddDays(1);
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_outputvoucherdetail_exportbydate");
+                objData.AddParameter("@begindate", dtBeginDate);
+                objData.AddParameter("@enddate", dtEndDate);
+                DataTable objTable = objData.ExecStoreToDataTable();
+
+                return objTable;
+            }
+            catch (Exception objEx)
+            {
+                return null;
+            }
+
+
+        }
+
+
+        public DataTable GetReportInputByDate(DateTime dtBeginDate)
+        {
+            dtBeginDate = dtBeginDate.Date;
+            DateTime dtEndDate = dtBeginDate.AddDays(1);
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_outputvoucherdetail_inputbydate");
+                objData.AddParameter("@begindate", dtBeginDate);
+                objData.AddParameter("@enddate", dtEndDate);
+                DataTable objTable = objData.ExecStoreToDataTable();
+
+                return objTable;
+            }
+            catch (Exception objEx)
             {
                 return null;
             }

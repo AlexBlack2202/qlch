@@ -42,6 +42,7 @@
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabBan = new System.Windows.Forms.MenuStrip();
             this.DeclareProductToolTip = new System.Windows.Forms.ToolStripMenuItem();
+            this.InventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabHienThi.SuspendLayout();
             this.ctxtmenuTabBan.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +85,8 @@
             this.DeclareProductToolTip,
             this.InputVoucherToolStripMenuItem,
             this.xuathuysanphamToolStripMenuItem,
-            this.customerrepaidToolStripMenuItem});
+            this.customerrepaidToolStripMenuItem,
+            this.InventoryToolStripMenuItem});
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý ";
@@ -145,6 +147,13 @@
             this.DeclareProductToolTip.Text = "Khai báo sản phẩm";
             this.DeclareProductToolTip.Click += new System.EventHandler(this.DeclareProductToolTip_Click);
             // 
+            // InventoryToolStripMenuItem
+            // 
+            this.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem";
+            this.InventoryToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.InventoryToolStripMenuItem.Text = "Xuất tồn hệ thống";
+            this.InventoryToolStripMenuItem.Click += new System.EventHandler(this.InventoryToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -180,5 +189,6 @@
         private System.Windows.Forms.ToolStripMenuItem xuathuysanphamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerrepaidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DeclareProductToolTip;
+        private System.Windows.Forms.ToolStripMenuItem InventoryToolStripMenuItem;
     }
 }

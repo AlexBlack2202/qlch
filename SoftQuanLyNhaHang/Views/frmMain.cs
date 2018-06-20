@@ -1,8 +1,10 @@
-﻿using System;
+﻿using OfficeOpenXml;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,7 +91,7 @@ namespace SoftQuanLyNhaHang.Views
 
         private void lựaChọnKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctBan.uctban,4,"Quản lý bàn");
+            ThemTabPages(Views.uctBan.uctban, 4, "Quản lý bàn");
         }
         private void hệThốngKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -98,7 +100,7 @@ namespace SoftQuanLyNhaHang.Views
 
         private void mónĂnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctLoaiThucDon.uctLTD,4, "Loại thực đơn");
+            ThemTabPages(Views.uctLoaiThucDon.uctLTD, 4, "Loại thực đơn");
         }
 
 
@@ -146,6 +148,32 @@ namespace SoftQuanLyNhaHang.Views
         private void customerrepaidToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ThemTabPages(new Views.uctCustomerRepaid(), 4, "Khách trả hàng");
+        }
+
+        private void InventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dataTable = new Controllers.ProductDAO().GetInventory();
+
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                try
+                {
+                    var newFile = new FileInfo("Inventory_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx");
+                    using (ExcelPackage pck = new ExcelPackage(newFile))
+                    {
+                        ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Accounts");
+                        ws.Cells["A1"].LoadFromDataTable(dataTable, true);
+                        pck.Save();
+                    }
+
+                    MessageBox.Show("Xuất file thành công");
+                }
+                catch { }
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu để xuất file.");
+            }
         }
     }
 }
