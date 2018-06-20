@@ -43,6 +43,8 @@
             this.ctxtmenuTabBan = new System.Windows.Forms.MenuStrip();
             this.DeclareProductToolTip = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OutputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabHienThi.SuspendLayout();
             this.ctxtmenuTabBan.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +88,9 @@
             this.InputVoucherToolStripMenuItem,
             this.xuathuysanphamToolStripMenuItem,
             this.customerrepaidToolStripMenuItem,
-            this.InventoryToolStripMenuItem});
+            this.InventoryToolStripMenuItem,
+            this.InputReportToolStripMenuItem,
+            this.OutputReportToolStripMenuItem});
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý ";
@@ -154,6 +158,20 @@
             this.InventoryToolStripMenuItem.Text = "Xuất tồn hệ thống";
             this.InventoryToolStripMenuItem.Click += new System.EventHandler(this.InventoryToolStripMenuItem_Click);
             // 
+            // InputReportToolStripMenuItem
+            // 
+            this.InputReportToolStripMenuItem.Name = "InputReportToolStripMenuItem";
+            this.InputReportToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.InputReportToolStripMenuItem.Text = "Báo cáo nhập";
+            this.InputReportToolStripMenuItem.Click += new System.EventHandler(this.InputReportToolStripMenuItem_Click);
+            // 
+            // OutputReportToolStripMenuItem
+            // 
+            this.OutputReportToolStripMenuItem.Name = "OutputReportToolStripMenuItem";
+            this.OutputReportToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.OutputReportToolStripMenuItem.Text = "Báo cáo xuất";
+            this.OutputReportToolStripMenuItem.Click += new System.EventHandler(this.OutputReportToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -190,5 +208,7 @@
         private System.Windows.Forms.ToolStripMenuItem customerrepaidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DeclareProductToolTip;
         private System.Windows.Forms.ToolStripMenuItem InventoryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem InputReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem OutputReportToolStripMenuItem;
     }
 }

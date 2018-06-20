@@ -175,5 +175,17 @@ namespace SoftQuanLyNhaHang.Views
                 MessageBox.Show("Không có dữ liệu để xuất file.");
             }
         }
+
+        private void InputReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Views.FormInputVoucher formInput = new FormInputVoucher();
+            formInput.ShowDialog();
+        }
+
+        private void OutputReportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Views.FormOutputVoucher formInput = new FormOutputVoucher();
+            formInput.ShowDialog();
+        }
     }
 }
