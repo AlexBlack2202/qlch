@@ -98,6 +98,10 @@ namespace SoftQuanLyNhaHang.Utils
                                 propertyInfos.SetValue(classObj, dbVal, null);
                             }
 
+                        }else if(propertyInfos.PropertyType == typeof(double))
+                        {
+                            propertyInfos.SetValue(classObj, ConvertToDouble(dataRow[dtField.Name]), null);
+
                         }
                     }
 

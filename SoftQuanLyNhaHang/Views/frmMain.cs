@@ -150,31 +150,7 @@ namespace SoftQuanLyNhaHang.Views
             ThemTabPages(new Views.uctCustomerRepaid(), 4, "Khách trả hàng");
         }
 
-        private void InventoryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DataTable dataTable = new Controllers.ProductDAO().GetInventory();
-
-            if (dataTable != null && dataTable.Rows.Count > 0)
-            {
-                try
-                {
-                    var newFile = new FileInfo("Inventory_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx");
-                    using (ExcelPackage pck = new ExcelPackage(newFile))
-                    {
-                        ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Accounts");
-                        ws.Cells["A1"].LoadFromDataTable(dataTable, true);
-                        pck.Save();
-                    }
-
-                    MessageBox.Show("Xuất file thành công");
-                }
-                catch { }
-            }
-            else
-            {
-                MessageBox.Show("Không có dữ liệu để xuất file.");
-            }
-        }
+     
 
         private void InputReportToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -186,6 +162,45 @@ namespace SoftQuanLyNhaHang.Views
         {
             Views.FormOutputVoucher formInput = new FormOutputVoucher();
             formInput.ShowDialog();
+        }
+
+        private void InventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DataTable dataTable = new Controllers.ProductDAO().GetInventory();
+
+            if (dataTable != null && dataTable.Rows.Count > 0)
+            {
+                try
+                {
+                    var newFile = new FileInfo("Inventory_" + DateTime.Now.ToString("yyyyMMdd") + ".xlsx");
+                    if (newFile.Exists)
+                    {
+                        newFile.Delete();
+                    }
+                    using (ExcelPackage pck = new ExcelPackage(newFile))
+                    {
+                        ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Accounts");
+                        ws.Cells["A1"].LoadFromDataTable(dataTable, true);
+                        pck.Save();
+                    }
+
+                    MessageBox.Show("Xuất file thành công");
+                }
+                catch (Exception objEx)
+                {
+
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu để xuất file.");
+            }
+        }
+
+        private void InputReportToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

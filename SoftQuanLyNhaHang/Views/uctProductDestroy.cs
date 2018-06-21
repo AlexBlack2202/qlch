@@ -15,23 +15,18 @@ namespace SoftQuanLyNhaHang.Views
 {
     public partial class uctProductDestroy : UserControl
     {
-        long outputvoucherid = -1;
+
         public uctProductDestroy()
         {
             InitializeComponent();
-            CreateInputVoucher();
+
 
 
         }
 
         public void CreateInputVoucher()
         {
-            outputvoucherid = new Controllers.ProductDAO().OutputVoucherAdd(1, 2); //Xuất huỷ tại siêu thị
 
-            if (outputvoucherid < 0)
-            {
-                MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
-            }
 
         }
 
@@ -55,6 +50,13 @@ namespace SoftQuanLyNhaHang.Views
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
+
+            long outputvoucherid = new Controllers.ProductDAO().OutputVoucherAdd(1, 2); //Xuất huỷ tại siêu thị
+
+            if (outputvoucherid < 0)
+            {
+                MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
+            }
             string productid = "";
             double quantity = 0;
             double retailprice = 0;
@@ -80,7 +82,16 @@ namespace SoftQuanLyNhaHang.Views
             if (inputvoucerdetailid < 0)
             {
                 MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
+                return;
             }
+            else
+            {
+                MessageBox.Show("Xuất huỷ thành công.");
+            }
+
+            textBoxBarCode.Text = "";
+            textBoxQuantity.Text = "0";
+            
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

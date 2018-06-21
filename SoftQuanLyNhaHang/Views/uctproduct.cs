@@ -112,14 +112,15 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-            bool result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice);
+            int result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice);
 
-            if (!result)
+            if (result != 0)
             {
                 MessageBox.Show("Có lỗi trong quá trình thêm dữ liệu");
                 return;
             }
 
+            MessageBox.Show("Thêm sản phẩm thành công");
             txtbarcode.Text = "";
             txproductname.Text = "";
 

@@ -94,6 +94,7 @@
     <Compile Include="Models\UserControlBO.cs" />
     <Compile Include="Utils\Config.cs" />
     <Compile Include="Utils\ExtensionHelper.cs" />
+    <Compile Include="Utils\Utils.cs" />
     <Compile Include="Views\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

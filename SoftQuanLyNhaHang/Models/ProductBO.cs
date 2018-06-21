@@ -19,5 +19,6 @@ namespace SoftQuanLyNhaHang.Models
         public long OutputVoucherDetailID { get; set; }
         public long OutputVoucherID { get; set; }
         public double SalePrice { get; set; }
+        public double Quantity { get; set; }
     }
 }

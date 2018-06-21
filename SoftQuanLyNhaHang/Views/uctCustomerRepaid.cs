@@ -60,7 +60,7 @@ namespace SoftQuanLyNhaHang.Views
             double retailprice = 0;
 
             string outputid = "";
-
+            outputid = textBoxOutputVoucherID.Text;
             if (string.IsNullOrEmpty(outputid))
             {
                 MessageBox.Show("Mã đơn hàng không đúng");
@@ -103,7 +103,23 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
+            if (quantity > curOutput.Quantity)
+            {
+                MessageBox.Show("Số lượng nhập trả lớn hơn số lượng xuất");
+                return;
+            }
+
             dgvProductList.Rows.Add(intStep, objCurProduct.ProductName, quantity, curOutput.SalePrice, productid, outputid);
+
+            double totalreturnmoney = 0;
+
+            double.TryParse(labelTotalReturnMoney.Text, out totalreturnmoney);
+
+            totalreturnmoney += quantity * curOutput.SalePrice;
+
+            labelTotalReturnMoney.Text = totalreturnmoney.ToString();
+
+            textBoxBarCode.Focus();
         }
 
         ProductBO objCurProduct = null;
@@ -151,18 +167,28 @@ namespace SoftQuanLyNhaHang.Views
 
             if (!string.IsNullOrEmpty(strBarCode) && strBarCode.Length > 3)
             {
-                ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
-
-                if (objProductBO != null)
+                var curoutputdetail = lstOutputVoucer.SingleOrDefault(p => p.ProductID == strBarCode);
+                if (curoutputdetail != null)
                 {
-                    labelProductName.Text = objProductBO.ProductName;
-                    objCurProduct = objProductBO;
+                    ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
+
+                    if (objProductBO != null)
+                    {
+                        labelProductName.Text = objProductBO.ProductName + " Sl mua: " + curoutputdetail.Quantity;
+                        objCurProduct = objProductBO;
+                    }
+                    else
+                    {
+                        labelProductName.Text = "";
+                        objCurProduct = null;
+                    }
                 }
                 else
                 {
                     labelProductName.Text = "";
                     objCurProduct = null;
                 }
+
             }
             else
             {
@@ -173,28 +199,48 @@ namespace SoftQuanLyNhaHang.Views
 
         private void buttonCustomerRepaid_Click(object sender, EventArgs e)
         {
-            DataTable dt = new DataTable();
-            dt = (DataTable)dgvProductList.DataSource;
+            DataTable dt = Utils.Utils.GetDataTableFromDGV(dgvProductList);
 
 
             if (dt != null && dt.Rows.Count > 0)
             {
+                ProductDAO productDAO = new Controllers.ProductDAO();
 
-                long inputvoucerid = new Controllers.ProductDAO().InputVoucherAdd(1, 2);
+                long inputvoucherid = productDAO.InputVoucherAdd(1, 2);
 
-                if (inputvoucerid < 0)
+                if (inputvoucherid < 0)
                 {
                     MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
                     return;
                 }
 
+                bool result = productDAO.InputVoucherDetailAdd(dt, inputvoucherid);
 
-                
+                if (!result)
+                {
+                    MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it để biết chi tiết");
+                    return;
+                }
+
+                else
+                {
+                    MessageBox.Show("Tạo phiếu xuất thành công");
+
+                }
+
+                dgvProductList.Rows.Clear();
+                intStep = 1;
+
             }
 
         }
 
         private void grQuanLyNV_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxQuantity_TextChanged(object sender, EventArgs e)
         {
 
         }

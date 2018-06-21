@@ -42,11 +42,15 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
+
+
             dbTotalBillModey += curProductBO.SellPrice * dbQuantity;
 
-            labelReturnMoney.Text = dbTotalBillModey.ToString();
-            dgvDanhSachSanPham.Rows.Add(stt, curProductBO.ProductName, dbQuantity, curProductBO.SellPrice, curProductBO.ProductID);
+            labelTotal.Text = dbTotalBillModey.ToString();
+            dgvDanhSachSanPham.Rows.Add(stt, curProductBO.ProductID, curProductBO.ProductName, dbQuantity, curProductBO.SellPrice, dbQuantity * curProductBO.SellPrice);
 
+            textBoxBarCode.Text = "";
+            textBoxSoLuong.Text = "";
             stt++;
 
         }
@@ -85,12 +89,22 @@ namespace SoftQuanLyNhaHang.Views
                     labelProductName.Text = objProductBO.ProductName;
                     curProductBO = objProductBO;
                 }
+                else
+                {
+                    labelProductName.Text = "";
+                }
+            }
+            else
+            {
+                labelProductName.Text = "";
             }
         }
 
         private void textBoxCustomerMoney_TextChanged(object sender, EventArgs e)
         {
-            double dbCurMoney = double.Parse(textBoxCustomerMoney.Text);
+
+            double dbCurMoney = 0;
+            double.TryParse(textBoxCustomerMoney.Text, out dbCurMoney);
 
             double dbTotalModey = double.Parse(labelTotal.Text);
 
@@ -109,28 +123,32 @@ namespace SoftQuanLyNhaHang.Views
         private void buttonPrintInvoice_Click(object sender, EventArgs e)
         {
             ProductDAO productDAO = new ProductDAO();
-            long inputvoucherid = productDAO.InputVoucherAdd(1, 1);
-            if (inputvoucherid == -1)
+            long outputvoucherid = productDAO.OutputVoucherAdd(1, 1);
+            if (outputvoucherid == -1)
             {
                 MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it");
                 return;
             }
-            DataTable dt = new DataTable();
-            dt = (DataTable)dgvDanhSachSanPham.DataSource;
+            DataTable dt = Utils.Utils.GetDataTableFromDGV(dgvDanhSachSanPham);
 
-            bool result = productDAO.InputVoucherDetailAdd(dt, inputvoucherid);
 
-            if (!result)
+            int result = productDAO.OutputVoucherDetailAdd(dt, outputvoucherid);
+
+            if (result != 0)
             {
                 MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it để biết chi tiết");
                 return;
             }
-
             else
             {
                 MessageBox.Show("Tạo phiếu xuất thành công");
-                return;
             }
+
+            dgvDanhSachSanPham.Rows.Clear();
+            labelTotal.Text = "";
+            textBoxCustomerMoney.Text = "";
+            
+            stt = 1;
         }
     }
 }

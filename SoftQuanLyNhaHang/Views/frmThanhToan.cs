@@ -24,5 +24,10 @@ namespace SoftQuanLyNhaHang.Views
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void goiMonBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

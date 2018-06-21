@@ -54,6 +54,7 @@
             // 
             this.goiMonBindingSource.DataMember = "GoiMon";
             this.goiMonBindingSource.DataSource = this.dataSet1;
+            this.goiMonBindingSource.CurrentChanged += new System.EventHandler(this.goiMonBindingSource_CurrentChanged);
             // 
             // reportViewer1
             // 

@@ -127,10 +127,7 @@ C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctCustomerRepaid.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctProductDestroy.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\EPPlus.dll
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll.config
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\EPPlus.xml
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojAssemblyReference.cache
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormInputVoucher.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormOutputVoucher.resources
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.CoreCompileInputs.cache
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.CopyComplete
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache

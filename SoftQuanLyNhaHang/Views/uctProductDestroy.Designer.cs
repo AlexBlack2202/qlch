@@ -30,12 +30,12 @@
         {
             this.grQuanLyNV = new System.Windows.Forms.GroupBox();
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
+            this.btnThemMoi = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxBarCode = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.labelProductName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThemMoi = new System.Windows.Forms.Button();
             this.grQuanLyNV.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,20 @@
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(212, 20);
             this.textBoxQuantity.TabIndex = 87;
+            this.textBoxQuantity.Text = "0";
+            // 
+            // btnThemMoi
+            // 
+            this.btnThemMoi.BackColor = System.Drawing.SystemColors.Control;
+            this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemMoi.Location = new System.Drawing.Point(121, 173);
+            this.btnThemMoi.Name = "btnThemMoi";
+            this.btnThemMoi.Size = new System.Drawing.Size(75, 23);
+            this.btnThemMoi.TabIndex = 74;
+            this.btnThemMoi.Text = "Thêm ";
+            this.btnThemMoi.UseVisualStyleBackColor = false;
+            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // label3
             // 
@@ -104,19 +118,6 @@
             this.label1.Size = new System.Drawing.Size(65, 17);
             this.label1.TabIndex = 72;
             this.label1.Text = "Xuất huỷ";
-            // 
-            // btnThemMoi
-            // 
-            this.btnThemMoi.BackColor = System.Drawing.SystemColors.Control;
-            this.btnThemMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMoi.Location = new System.Drawing.Point(121, 173);
-            this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(75, 23);
-            this.btnThemMoi.TabIndex = 74;
-            this.btnThemMoi.Text = "Thêm ";
-            this.btnThemMoi.UseVisualStyleBackColor = false;
-            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
             // 
             // uctProductDestroy
             // 

@@ -8,29 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using SoftQuanLyNhaHang.Models;
+using SoftQuanLyNhaHang.Controllers;
 
 namespace SoftQuanLyNhaHang.Views
 {
     public partial class uctInputVoucher : UserControl
     {
-        long inputvoucerid = -1;
+        // long inputvoucerid = -1;
         public uctInputVoucher()
         {
             InitializeComponent();
-            CreateInputVoucher();
+
 
 
         }
 
         public void CreateInputVoucher()
         {
-            inputvoucerid = new Controllers.ProductDAO().InputVoucherAdd(1,1);
+            //inputvoucerid = new Controllers.ProductDAO().InputVoucherAdd(1, 1);
 
-            if (inputvoucerid < 0)
-            {
-                MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
-            }
+            //if (inputvoucerid < 0)
+            //{
+            //    MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
+            //}
 
         }
 
@@ -50,7 +51,7 @@ namespace SoftQuanLyNhaHang.Views
 
         }
 
-
+        int stt = 1;
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
@@ -72,18 +73,30 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
+            if (quantity <= 0)
+            {
+                MessageBox.Show("Số lượng nhập phải lớn hơn 0");
+                return;
+            }
+
             if (!double.TryParse(textBoxRetailPrice.Text, out retailprice))
             {
                 MessageBox.Show("Đơn giá nhập không hợp lệ");
                 return;
             }
 
-            long inputvoucerdetailid = new Controllers.ProductDAO().InputVoucherDetailAdd(productid, inputvoucerid, quantity, retailprice);
+            dgvProductList.Rows.Add(stt, textBoxBarCode.Text, labelProductName.Text, textBoxQuantity.Text, textBoxRetailPrice.Text, quantity * retailprice);
+            stt++;
 
-            if (inputvoucerdetailid < 0)
-            {
-                MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
-            }
+            textBoxQuantity.Text = "0";
+            textBoxRetailPrice.Text = "1";
+            textBoxBarCode.Text = "";
+            //long inputvoucerdetailid = new Controllers.ProductDAO().InputVoucherDetailAdd(productid, inputvoucerid, quantity, retailprice);
+
+            //if (inputvoucerdetailid < 0)
+            //{
+            //    MessageBox.Show("Có lỗi trong quá kết nối dữ liệu để tạo phiếu nhập. Vui lòng tắt app mở lại hoặc liên hệ it.");
+            //}
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -105,6 +118,61 @@ namespace SoftQuanLyNhaHang.Views
         private void dgvDanhSachNV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void textBoxBarCode_TextChanged(object sender, EventArgs e)
+        {
+            string strBarCode = textBoxBarCode.Text;
+
+            if (!string.IsNullOrEmpty(strBarCode))
+            {
+                ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
+
+                if (objProductBO != null)
+                {
+                    labelProductName.Text = objProductBO.ProductName;
+                }
+                else
+                {
+                    labelProductName.Text = "";
+                }
+            }
+            else
+            {
+                labelProductName.Text = "";
+            }
+        }
+
+
+
+        private void buttonAddToDataBase_Click(object sender, EventArgs e)
+        {
+            ProductDAO productDAO = new ProductDAO();
+            long inputvoucherid = productDAO.InputVoucherAdd(1, 1);
+            if (inputvoucherid == -1)
+            {
+                MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it");
+                return;
+            }
+            DataTable dt = new DataTable();
+            dt = Utils.Utils.GetDataTableFromDGV(dgvProductList);
+
+            bool result = productDAO.InputVoucherDetailAdd(dt, inputvoucherid);
+
+            if (!result)
+            {
+                MessageBox.Show("Không thể tạo phiếu xuất. Liên hệ it để biết chi tiết");
+                return;
+            }
+
+            else
+            {
+                MessageBox.Show("Tạo phiếu xuất thành công");
+
+            }
+
+            dgvProductList.Rows.Clear();
+            stt = 1;
         }
     }
 }

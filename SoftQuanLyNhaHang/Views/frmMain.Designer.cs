@@ -35,16 +35,16 @@
             this.menuItemDongTrang = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemDongTrangAll = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeclareProductToolTip = new System.Windows.Forms.ToolStripMenuItem();
             this.InputVoucherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xuathuysanphamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customerrepaidToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gọiMónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabBan = new System.Windows.Forms.MenuStrip();
-            this.DeclareProductToolTip = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.InventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.InputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OutputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.outputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabHienThi.SuspendLayout();
             this.ctxtmenuTabBan.SuspendLayout();
             this.SuspendLayout();
@@ -87,13 +87,17 @@
             this.DeclareProductToolTip,
             this.InputVoucherToolStripMenuItem,
             this.xuathuysanphamToolStripMenuItem,
-            this.customerrepaidToolStripMenuItem,
-            this.InventoryToolStripMenuItem,
-            this.InputReportToolStripMenuItem,
-            this.OutputReportToolStripMenuItem});
+            this.customerrepaidToolStripMenuItem});
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.quảnLýNhânViênToolStripMenuItem.Text = "Quản lý ";
+            // 
+            // DeclareProductToolTip
+            // 
+            this.DeclareProductToolTip.Name = "DeclareProductToolTip";
+            this.DeclareProductToolTip.Size = new System.Drawing.Size(184, 22);
+            this.DeclareProductToolTip.Text = "Khai báo sản phẩm";
+            this.DeclareProductToolTip.Click += new System.EventHandler(this.DeclareProductToolTip_Click);
             // 
             // InputVoucherToolStripMenuItem
             // 
@@ -123,20 +127,12 @@
             this.gọiMónToolStripMenuItem.Text = "Bán hàng";
             this.gọiMónToolStripMenuItem.Click += new System.EventHandler(this.gọiMónToolStripMenuItem_Click);
             // 
-            // thoátToolStripMenuItem
-            // 
-            this.thoátToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thoátToolStripMenuItem.Image")));
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.thoátToolStripMenuItem.Text = "Thoát";
-            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
-            // 
             // ctxtmenuTabBan
             // 
             this.ctxtmenuTabBan.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quảnLýNhânViênToolStripMenuItem,
-            this.gọiMónToolStripMenuItem,
-            this.thoátToolStripMenuItem});
+            this.reportToolStripMenuItem,
+            this.gọiMónToolStripMenuItem});
             this.ctxtmenuTabBan.Location = new System.Drawing.Point(0, 0);
             this.ctxtmenuTabBan.Name = "ctxtmenuTabBan";
             this.ctxtmenuTabBan.Size = new System.Drawing.Size(1028, 24);
@@ -144,33 +140,36 @@
             this.ctxtmenuTabBan.Text = "menuStrip1";
             this.ctxtmenuTabBan.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ctxtmenuTabBan_ItemClicked);
             // 
-            // DeclareProductToolTip
+            // reportToolStripMenuItem
             // 
-            this.DeclareProductToolTip.Name = "DeclareProductToolTip";
-            this.DeclareProductToolTip.Size = new System.Drawing.Size(184, 22);
-            this.DeclareProductToolTip.Text = "Khai báo sản phẩm";
-            this.DeclareProductToolTip.Click += new System.EventHandler(this.DeclareProductToolTip_Click);
+            this.reportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.InventoryToolStripMenuItem,
+            this.inputReportToolStripMenuItem,
+            this.outputReportToolStripMenuItem});
+            this.reportToolStripMenuItem.Name = "reportToolStripMenuItem";
+            this.reportToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.reportToolStripMenuItem.Text = "Báo cáo";
             // 
             // InventoryToolStripMenuItem
             // 
             this.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem";
-            this.InventoryToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.InventoryToolStripMenuItem.Text = "Xuất tồn hệ thống";
+            this.InventoryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.InventoryToolStripMenuItem.Text = "Báo cáo tồn";
             this.InventoryToolStripMenuItem.Click += new System.EventHandler(this.InventoryToolStripMenuItem_Click);
             // 
-            // InputReportToolStripMenuItem
+            // inputReportToolStripMenuItem
             // 
-            this.InputReportToolStripMenuItem.Name = "InputReportToolStripMenuItem";
-            this.InputReportToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.InputReportToolStripMenuItem.Text = "Báo cáo nhập";
-            this.InputReportToolStripMenuItem.Click += new System.EventHandler(this.InputReportToolStripMenuItem_Click);
+            this.inputReportToolStripMenuItem.Name = "inputReportToolStripMenuItem";
+            this.inputReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.inputReportToolStripMenuItem.Text = "Báo cáo nhập";
+            this.inputReportToolStripMenuItem.Click += new System.EventHandler(this.InputReportToolStripMenuItem_Click);
             // 
-            // OutputReportToolStripMenuItem
+            // outputReportToolStripMenuItem
             // 
-            this.OutputReportToolStripMenuItem.Name = "OutputReportToolStripMenuItem";
-            this.OutputReportToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.OutputReportToolStripMenuItem.Text = "Báo cáo xuất";
-            this.OutputReportToolStripMenuItem.Click += new System.EventHandler(this.OutputReportToolStripMenuItem_Click);
+            this.outputReportToolStripMenuItem.Name = "outputReportToolStripMenuItem";
+            this.outputReportToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.outputReportToolStripMenuItem.Text = "Báo cáo xuất";
+            this.outputReportToolStripMenuItem.Click += new System.EventHandler(this.OutputReportToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -201,14 +200,14 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemDongTrangAll;
         private System.Windows.Forms.ToolStripMenuItem quảnLýNhânViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gọiMónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
         private System.Windows.Forms.MenuStrip ctxtmenuTabBan;
         private System.Windows.Forms.ToolStripMenuItem InputVoucherToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xuathuysanphamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customerrepaidToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem DeclareProductToolTip;
+        private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem InventoryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem InputReportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem OutputReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inputReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem outputReportToolStripMenuItem;
     }
 }

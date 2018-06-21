@@ -13,7 +13,7 @@ namespace SoftQuanLyNhaHang.Controllers
     public class ProductDAO
     {
         A4ULtd.Lib.Data.IData objData = Data.CreateData(Utils.Config.DBCon);
-        public bool AddProduct(string strbarcode, string strproductname, double sellprice)
+        public int AddProduct(string strbarcode, string strproductname, double sellprice)
         {
 
             try
@@ -27,14 +27,14 @@ namespace SoftQuanLyNhaHang.Controllers
             }
             catch (Exception objEx)
             {
-                return false;
+                return 1;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return true;
+            return 0;
         }
 
         public bool UpdateProductSellPrice(string strbarcode, double sellprice)
@@ -68,12 +68,12 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_input_voucher_add");
                 objData.AddParameter("@inputtype", intinputtype);
-                objData.AddParameter("@creatteduserid", intcreateduserid);
+                objData.AddParameter("@createduserid", intcreateduserid);
                 string strValue = objData.ExecStoreToString();
 
                 return Convert.ToInt64(strValue);
             }
-            catch
+            catch (Exception objEx)
             {
                 return -1;
             }
@@ -106,7 +106,7 @@ namespace SoftQuanLyNhaHang.Controllers
 
         public long InputVoucherDetailAdd(string productid, long inputvoucherid, double quantity, double retailprice)
         {
-
+            long returnval = -1;
             try
             {
                 objData.Connect();
@@ -117,22 +117,23 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.AddParameter("@price", retailprice);
                 string strValue = objData.ExecStoreToString();
 
-                return Convert.ToInt64(strValue);
+                returnval= Convert.ToInt64(strValue);
             }
             catch (Exception objEx)
             {
-                return -1;
+                returnval= - 1;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return -1;
+            return returnval;
         }
 
         public bool InputVoucherDetailAdd(DataTable tableData, long linputvoucherid)
         {
+            bool returnValue = true;
 
             try
             {
@@ -142,27 +143,67 @@ namespace SoftQuanLyNhaHang.Controllers
                 {
                     string strProductID = tableData.Rows[intRow]["productid"].ToString();
                     double dbQuantity = Convert.ToDouble(tableData.Rows[intRow]["quantity"].ToString());
-                    double dbRetailPrice = Convert.ToDouble(tableData.Rows[intRow]["retailprice"].ToString());
-
+                    double dbRetailPrice = Convert.ToDouble(tableData.Rows[intRow]["saleprice"].ToString());
+                    long outputvoucherid = Convert.ToInt64(tableData.Rows[intRow]["outputvoucherid"].ToString());
                     objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
                     objData.AddParameter("@productid", strProductID);
                     objData.AddParameter("@inputvoucherid", linputvoucherid);
                     objData.AddParameter("@quantity", dbQuantity);
                     objData.AddParameter("@price", dbRetailPrice);
+                    objData.AddParameter("@outputvoucherid", outputvoucherid);
+                    
                     string strValue = objData.ExecStoreToString();
                 }
                 objData.CommitTransaction();
             }
             catch (Exception objEx)
             {
-                return false;
+                objData.RollBackTransaction();
+                returnValue = false;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return true;
+            return returnValue;
+        }
+
+
+        public int OutputVoucherDetailAdd(DataTable tableData, long outvoucherid)
+        {
+            int returnValue = 0;
+            try
+            {
+                objData.BeginTransaction();
+
+                for (int intRow = 0; intRow < tableData.Rows.Count; intRow++)
+                {
+                    string productid = tableData.Rows[intRow]["productid"].ToString();
+
+                    string quantity = tableData.Rows[intRow]["quantity"].ToString();
+                    string retailprice = tableData.Rows[intRow]["retailprice"].ToString();
+                    objData.CreateNewStoredProcedure("pm_outputvoucherdetail_add");
+                    objData.AddParameter("@productid", productid);
+                    objData.AddParameter("@outputvoucherid", outvoucherid);
+                    objData.AddParameter("@quantity", quantity);
+                    objData.AddParameter("@sellprice", retailprice);
+                    string strValue = objData.ExecStoreToString();
+
+                }
+                objData.CommitTransaction();
+            }
+            catch (Exception objEx)
+            {
+                objData.RollBackTransaction();
+                returnValue = 1;
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return returnValue;
         }
 
         public long OutputVoucherDetailAdd(string productid, long outvoucherid, double quantity, double retailprice)

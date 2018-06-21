@@ -49,10 +49,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.IdBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RetailPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grDanhSachBan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSanPham)).BeginInit();
             this.grThongTinBan.SuspendLayout();
@@ -77,10 +78,11 @@
             this.dgvDanhSachSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachSanPham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdBan,
+            this.ProductID,
             this.ProductName,
             this.Quantity,
             this.RetailPrice,
-            this.ProductID});
+            this.total});
             this.dgvDanhSachSanPham.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvDanhSachSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.dgvDanhSachSanPham.Location = new System.Drawing.Point(3, 0);
@@ -276,6 +278,13 @@
             this.IdBan.Name = "IdBan";
             this.IdBan.ReadOnly = true;
             // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "Mã Sản Phẩm";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            this.ProductID.Visible = false;
+            // 
             // ProductName
             // 
             this.ProductName.DataPropertyName = "ProductName";
@@ -297,12 +306,11 @@
             this.RetailPrice.Name = "RetailPrice";
             this.RetailPrice.ReadOnly = true;
             // 
-            // ProductID
+            // total
             // 
-            this.ProductID.HeaderText = "Mã Sản Phẩm";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
-            this.ProductID.Visible = false;
+            this.total.HeaderText = "Thành tiền";
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
             // 
             // uctOutputVoucher
             // 
@@ -351,9 +359,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn RetailPrice;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn total;
     }
 }

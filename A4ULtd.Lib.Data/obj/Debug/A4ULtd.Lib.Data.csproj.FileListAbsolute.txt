@@ -90,6 +90,4 @@ C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll.conf
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\MySql.Data.dll
-C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojAssemblyReference.cache
-C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CoreCompileInputs.cache
-C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CopyComplete
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
