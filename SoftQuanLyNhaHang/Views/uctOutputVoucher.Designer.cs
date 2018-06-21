@@ -30,6 +30,12 @@
         {
             this.grDanhSachBan = new System.Windows.Forms.GroupBox();
             this.dgvDanhSachSanPham = new System.Windows.Forms.DataGridView();
+            this.IdBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RetailPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.grThongTinBan = new System.Windows.Forms.GroupBox();
             this.labelProductName = new System.Windows.Forms.Label();
@@ -48,12 +54,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.IdBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RetailPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grDanhSachBan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSanPham)).BeginInit();
             this.grThongTinBan.SuspendLayout();
@@ -90,6 +90,47 @@
             this.dgvDanhSachSanPham.ReadOnly = true;
             this.dgvDanhSachSanPham.Size = new System.Drawing.Size(537, 446);
             this.dgvDanhSachSanPham.TabIndex = 88;
+            // 
+            // IdBan
+            // 
+            this.IdBan.DataPropertyName = "IdBan";
+            this.IdBan.HeaderText = "Stt";
+            this.IdBan.Name = "IdBan";
+            this.IdBan.ReadOnly = true;
+            // 
+            // ProductID
+            // 
+            this.ProductID.HeaderText = "Mã Sản Phẩm";
+            this.ProductID.Name = "ProductID";
+            this.ProductID.ReadOnly = true;
+            this.ProductID.Visible = false;
+            // 
+            // ProductName
+            // 
+            this.ProductName.DataPropertyName = "ProductName";
+            this.ProductName.HeaderText = "Tên sản phẩm";
+            this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.DataPropertyName = "SoLuong";
+            this.Quantity.HeaderText = "Số lượng";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // RetailPrice
+            // 
+            this.RetailPrice.DataPropertyName = "DonGia";
+            this.RetailPrice.HeaderText = "Đơn Giá";
+            this.RetailPrice.Name = "RetailPrice";
+            this.RetailPrice.ReadOnly = true;
+            // 
+            // total
+            // 
+            this.total.HeaderText = "Thành tiền";
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
             // 
             // label1
             // 
@@ -196,7 +237,7 @@
             this.buttonPrintInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPrintInvoice.Location = new System.Drawing.Point(898, 484);
             this.buttonPrintInvoice.Name = "buttonPrintInvoice";
-            this.buttonPrintInvoice.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrintInvoice.Size = new System.Drawing.Size(107, 23);
             this.buttonPrintInvoice.TabIndex = 101;
             this.buttonPrintInvoice.Text = "In hoá đơn";
             this.buttonPrintInvoice.UseVisualStyleBackColor = true;
@@ -270,47 +311,6 @@
             this.label10.Size = new System.Drawing.Size(63, 15);
             this.label10.TabIndex = 92;
             this.label10.Text = "Tổng tiền:";
-            // 
-            // IdBan
-            // 
-            this.IdBan.DataPropertyName = "IdBan";
-            this.IdBan.HeaderText = "Stt";
-            this.IdBan.Name = "IdBan";
-            this.IdBan.ReadOnly = true;
-            // 
-            // ProductID
-            // 
-            this.ProductID.HeaderText = "Mã Sản Phẩm";
-            this.ProductID.Name = "ProductID";
-            this.ProductID.ReadOnly = true;
-            this.ProductID.Visible = false;
-            // 
-            // ProductName
-            // 
-            this.ProductName.DataPropertyName = "ProductName";
-            this.ProductName.HeaderText = "Tên sản phẩm";
-            this.ProductName.Name = "ProductName";
-            this.ProductName.ReadOnly = true;
-            // 
-            // Quantity
-            // 
-            this.Quantity.DataPropertyName = "SoLuong";
-            this.Quantity.HeaderText = "Số lượng";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            // 
-            // RetailPrice
-            // 
-            this.RetailPrice.DataPropertyName = "DonGia";
-            this.RetailPrice.HeaderText = "Đơn Giá";
-            this.RetailPrice.Name = "RetailPrice";
-            this.RetailPrice.ReadOnly = true;
-            // 
-            // total
-            // 
-            this.total.HeaderText = "Thành tiền";
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
             // 
             // uctOutputVoucher
             // 
