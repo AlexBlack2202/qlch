@@ -28,41 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOutputVoucher));
             this.buttonExport = new System.Windows.Forms.Button();
             this.dateTimePickerDate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonExport
             // 
-            this.buttonExport.Location = new System.Drawing.Point(191, 28);
+            this.buttonExport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonExport.FlatAppearance.BorderSize = 0;
+            this.buttonExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExport.Image = ((System.Drawing.Image)(resources.GetObject("buttonExport.Image")));
+            this.buttonExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonExport.Location = new System.Drawing.Point(137, 82);
+            this.buttonExport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonExport.Name = "buttonExport";
-            this.buttonExport.Size = new System.Drawing.Size(88, 33);
+            this.buttonExport.Size = new System.Drawing.Size(134, 52);
             this.buttonExport.TabIndex = 3;
             this.buttonExport.Text = "Xuất file";
+            this.buttonExport.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonExport.UseVisualStyleBackColor = true;
             this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // dateTimePickerDate
             // 
-            this.dateTimePickerDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDate.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePickerDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerDate.Location = new System.Drawing.Point(35, 32);
+            this.dateTimePickerDate.Location = new System.Drawing.Point(137, 30);
+            this.dateTimePickerDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerDate.Name = "dateTimePickerDate";
-            this.dateTimePickerDate.Size = new System.Drawing.Size(120, 29);
+            this.dateTimePickerDate.Size = new System.Drawing.Size(134, 26);
             this.dateTimePickerDate.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ngày báo cáo:";
             // 
             // FormOutputVoucher
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 86);
+            this.ClientSize = new System.Drawing.Size(298, 158);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExport);
             this.Controls.Add(this.dateTimePickerDate);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormOutputVoucher";
             this.Text = "Báo cáo xuất";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +90,6 @@
 
         private System.Windows.Forms.Button buttonExport;
         private System.Windows.Forms.DateTimePicker dateTimePickerDate;
+        private System.Windows.Forms.Label label1;
     }
 }
