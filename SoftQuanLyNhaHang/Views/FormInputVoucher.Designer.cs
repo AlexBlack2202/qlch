@@ -41,7 +41,7 @@
             this.dateTimePickerDate.Location = new System.Drawing.Point(155, 30);
             this.dateTimePickerDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerDate.Name = "dateTimePickerDate";
-            this.dateTimePickerDate.Size = new System.Drawing.Size(134, 26);
+            this.dateTimePickerDate.Size = new System.Drawing.Size(148, 26);
             this.dateTimePickerDate.TabIndex = 0;
             // 
             // buttonExport
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(322, 145);
+            this.ClientSize = new System.Drawing.Size(341, 145);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExport);
             this.Controls.Add(this.dateTimePickerDate);
