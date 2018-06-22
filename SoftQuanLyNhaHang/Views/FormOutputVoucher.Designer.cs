@@ -41,7 +41,7 @@
             this.buttonExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExport.Image = ((System.Drawing.Image)(resources.GetObject("buttonExport.Image")));
             this.buttonExport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonExport.Location = new System.Drawing.Point(137, 82);
+            this.buttonExport.Location = new System.Drawing.Point(155, 75);
             this.buttonExport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonExport.Name = "buttonExport";
             this.buttonExport.Size = new System.Drawing.Size(134, 52);
@@ -55,7 +55,7 @@
             // 
             this.dateTimePickerDate.CustomFormat = "dd-MM-yyyy";
             this.dateTimePickerDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerDate.Location = new System.Drawing.Point(137, 30);
+            this.dateTimePickerDate.Location = new System.Drawing.Point(155, 30);
             this.dateTimePickerDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePickerDate.Name = "dateTimePickerDate";
             this.dateTimePickerDate.Size = new System.Drawing.Size(134, 26);
@@ -74,7 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 158);
+            this.ClientSize = new System.Drawing.Size(322, 145);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonExport);
             this.Controls.Add(this.dateTimePickerDate);
