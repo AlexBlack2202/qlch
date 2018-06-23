@@ -172,6 +172,10 @@
     <Compile Include="Views\uctCustomerRepaid.Designer.cs">
       <DependentUpon>uctCustomerRepaid.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\uctPrintBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctPrintBarcode.Designer.cs" />
     <Compile Include="Views\uctProductDestroy.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -313,6 +317,7 @@
     <EmbeddedResource Include="Views\uctCustomerRepaid.resx">
       <DependentUpon>uctCustomerRepaid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctPrintBarcode.resx" />
     <EmbeddedResource Include="Views\uctProductDestroy.resx">
       <DependentUpon>uctProductDestroy.cs</DependentUpon>
     </EmbeddedResource>
