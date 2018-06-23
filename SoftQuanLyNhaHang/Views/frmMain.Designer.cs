@@ -45,6 +45,7 @@
             this.InventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.outputReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintBarcodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ctxtmenuTabHienThi.SuspendLayout();
             this.ctxtmenuTabBan.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +90,8 @@
             this.DeclareProductToolTip,
             this.InputVoucherToolStripMenuItem,
             this.xuathuysanphamToolStripMenuItem,
-            this.customerrepaidToolStripMenuItem});
+            this.customerrepaidToolStripMenuItem,
+            this.PrintBarcodeToolStripMenuItem});
             this.quảnLýNhânViênToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("quảnLýNhânViênToolStripMenuItem.Image")));
             this.quảnLýNhânViênToolStripMenuItem.Name = "quảnLýNhânViênToolStripMenuItem";
             this.quảnLýNhânViênToolStripMenuItem.Size = new System.Drawing.Size(114, 29);
@@ -98,28 +100,28 @@
             // DeclareProductToolTip
             // 
             this.DeclareProductToolTip.Name = "DeclareProductToolTip";
-            this.DeclareProductToolTip.Size = new System.Drawing.Size(259, 30);
+            this.DeclareProductToolTip.Size = new System.Drawing.Size(264, 30);
             this.DeclareProductToolTip.Text = "Khai báo sản phẩm";
             this.DeclareProductToolTip.Click += new System.EventHandler(this.DeclareProductToolTip_Click);
             // 
             // InputVoucherToolStripMenuItem
             // 
             this.InputVoucherToolStripMenuItem.Name = "InputVoucherToolStripMenuItem";
-            this.InputVoucherToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.InputVoucherToolStripMenuItem.Size = new System.Drawing.Size(264, 30);
             this.InputVoucherToolStripMenuItem.Text = "Nhập kho";
             this.InputVoucherToolStripMenuItem.Click += new System.EventHandler(this.InputVoucherToolStripMenuItem_Click);
             // 
             // xuathuysanphamToolStripMenuItem
             // 
             this.xuathuysanphamToolStripMenuItem.Name = "xuathuysanphamToolStripMenuItem";
-            this.xuathuysanphamToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.xuathuysanphamToolStripMenuItem.Size = new System.Drawing.Size(264, 30);
             this.xuathuysanphamToolStripMenuItem.Text = "Xuất huỷ sản phẩm";
             this.xuathuysanphamToolStripMenuItem.Click += new System.EventHandler(this.xuathuysanphamToolStripMenuItem_Click);
             // 
             // customerrepaidToolStripMenuItem
             // 
             this.customerrepaidToolStripMenuItem.Name = "customerrepaidToolStripMenuItem";
-            this.customerrepaidToolStripMenuItem.Size = new System.Drawing.Size(259, 30);
+            this.customerrepaidToolStripMenuItem.Size = new System.Drawing.Size(264, 30);
             this.customerrepaidToolStripMenuItem.Text = "Khách hàng trả hàng";
             this.customerrepaidToolStripMenuItem.Click += new System.EventHandler(this.customerrepaidToolStripMenuItem_Click);
             // 
@@ -160,23 +162,30 @@
             // InventoryToolStripMenuItem
             // 
             this.InventoryToolStripMenuItem.Name = "InventoryToolStripMenuItem";
-            this.InventoryToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.InventoryToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.InventoryToolStripMenuItem.Text = "Báo cáo tồn";
             this.InventoryToolStripMenuItem.Click += new System.EventHandler(this.InventoryToolStripMenuItem_Click);
             // 
             // inputReportToolStripMenuItem
             // 
             this.inputReportToolStripMenuItem.Name = "inputReportToolStripMenuItem";
-            this.inputReportToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.inputReportToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.inputReportToolStripMenuItem.Text = "Báo cáo nhập";
             this.inputReportToolStripMenuItem.Click += new System.EventHandler(this.InputReportToolStripMenuItem_Click);
             // 
             // outputReportToolStripMenuItem
             // 
             this.outputReportToolStripMenuItem.Name = "outputReportToolStripMenuItem";
-            this.outputReportToolStripMenuItem.Size = new System.Drawing.Size(252, 30);
+            this.outputReportToolStripMenuItem.Size = new System.Drawing.Size(204, 30);
             this.outputReportToolStripMenuItem.Text = "Báo cáo xuất";
             this.outputReportToolStripMenuItem.Click += new System.EventHandler(this.OutputReportToolStripMenuItem_Click);
+            // 
+            // PrintBarcodeToolStripMenuItem
+            // 
+            this.PrintBarcodeToolStripMenuItem.Name = "PrintBarcodeToolStripMenuItem";
+            this.PrintBarcodeToolStripMenuItem.Size = new System.Drawing.Size(264, 30);
+            this.PrintBarcodeToolStripMenuItem.Text = "In barcode sản phẩm";
+            this.PrintBarcodeToolStripMenuItem.Click += new System.EventHandler(this.PrintBarcodeToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -217,5 +226,6 @@
         private System.Windows.Forms.ToolStripMenuItem InventoryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inputReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem outputReportToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintBarcodeToolStripMenuItem;
     }
 }

@@ -79,7 +79,7 @@ namespace SoftQuanLyNhaHang.Views
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            uctSearchNhanVien uctS = new uctSearchNhanVien();
+            //uctSearchNhanVien uctS = new uctSearchNhanVien();
 
         }
 
@@ -144,7 +144,7 @@ namespace SoftQuanLyNhaHang.Views
 
             double dbSellPrice = -1;
 
-            if (string.IsNullOrEmpty(textBoxRetailPriceEdit.Text) || !double.TryParse(textBoxRetailPriceEdit.Text, out dbSellPrice))
+            //if (string.IsNullOrEmpty(textBoxRetailPriceEdit.Text) || !double.TryParse(textBoxRetailPriceEdit.Text, out dbSellPrice))
             {
                 MessageBox.Show("Giá bán không hợp lệ");
                 return;
@@ -162,10 +162,10 @@ namespace SoftQuanLyNhaHang.Views
                 MessageBox.Show("Cập nhật thành công");
             }
 
-            textBoxProductIDEditPrice.Text = "";
-            labelProductNameEdit.Text = "";
+            //textBoxProductIDEditPrice.Text = "";
+            //labelProductNameEdit.Text = "";
 
-            textBoxRetailPriceEdit.Text = "-1";
+            //textBoxRetailPriceEdit.Text = "-1";
 
 
         }
@@ -183,16 +183,16 @@ namespace SoftQuanLyNhaHang.Views
         ProductBO curProductBO = null;
         private void textBoxProductIDEditPrice_TextChanged(object sender, EventArgs e)
         {
-            string strBarCode = textBoxProductIDEditPrice.Text;
+            //string strBarCode = textBoxProductIDEditPrice.Text;
 
-            if (!string.IsNullOrEmpty(strBarCode))
+            //if (!string.IsNullOrEmpty(strBarCode))
             {
-                ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
+                //ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
 
-                if (objProductBO != null)
+                //if (objProductBO != null)
                 {
-                    labelProductNameEdit.Text = objProductBO.ProductName;
-                    curProductBO = objProductBO;
+                    //labelProductNameEdit.Text = objProductBO.ProductName;
+                    //curProductBO = objProductBO;
                 }
             }
         }

@@ -95,23 +95,14 @@
     <Compile Include="Models\ProductBO.cs" />
     <Compile Include="Models\ThucDonMod.cs" />
     <Compile Include="Models\UserControlBO.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Utils\Config.cs" />
     <Compile Include="Utils\ExtensionHelper.cs" />
     <Compile Include="Utils\Utils.cs" />
-    <Compile Include="Views\CrystalReportOutput.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportOutput.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Views\DataSet1.cs">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Views\DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Views\FormInputVoucher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,48 +153,6 @@
     <Compile Include="Views\uctOutputVoucher.Designer.cs">
       <DependentUpon>uctOutputVoucher.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\uctBan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctBan.Designer.cs">
-      <DependentUpon>uctBan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctDanhSachTD.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctDanhSachTD.Designer.cs">
-      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctGoiMon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctGoiMon.Designer.cs">
-      <DependentUpon>uctGoiMon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctKhachHang.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctKhachHang.Designer.cs">
-      <DependentUpon>uctKhachHang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctKhuVuc.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctKhuVuc.Designer.cs">
-      <DependentUpon>uctKhuVuc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctLoaiThucDon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctLoaiThucDon.Designer.cs">
-      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctMonDaGoi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctMonDaGoi.Designer.cs">
-      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\uctInputVoucher.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,40 +165,18 @@
     <Compile Include="Views\uctproduct.Designer.cs">
       <DependentUpon>uctproduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\uctNhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctNhanVien.Designer.cs">
-      <DependentUpon>uctNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctPhanQuyen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctPhanQuyen.Designer.cs">
-      <DependentUpon>uctPhanQuyen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\uctSearchNhanVien.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Views\uctSearchNhanVien.Designer.cs">
-      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\uctThanhToan.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\uctThanhToan.Designer.cs">
       <DependentUpon>uctThanhToan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\uctThucDon.cs">
+    <Compile Include="Views\uctPrintBarcode.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\uctThucDon.Designer.cs">
-      <DependentUpon>uctThucDon.cs</DependentUpon>
+    <Compile Include="Views\uctPrintBarcode.Designer.cs">
+      <DependentUpon>uctPrintBarcode.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\CrystalReportOutput.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportOutput.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormInputVoucher.resx">
       <DependentUpon>FormInputVoucher.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,19 +188,17 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmThanhToan.resx">
       <DependentUpon>frmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctPrintBarcode.resx">
+      <DependentUpon>uctPrintBarcode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Report1.rdlc">
       <SubType>Designer</SubType>
@@ -287,47 +212,14 @@
     <EmbeddedResource Include="Views\uctOutputVoucher.resx">
       <DependentUpon>uctOutputVoucher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctBan.resx">
-      <DependentUpon>uctBan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctDanhSachTD.resx">
-      <DependentUpon>uctDanhSachTD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctGoiMon.resx">
-      <DependentUpon>uctGoiMon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctKhachHang.resx">
-      <DependentUpon>uctKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctKhuVuc.resx">
-      <DependentUpon>uctKhuVuc.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctLoaiThucDon.resx">
-      <DependentUpon>uctLoaiThucDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctMonDaGoi.resx">
-      <DependentUpon>uctMonDaGoi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\uctInputVoucher.resx">
       <DependentUpon>uctInputVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\uctproduct.resx">
       <DependentUpon>uctproduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctNhanVien.resx">
-      <DependentUpon>uctNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctPhanQuyen.resx">
-      <DependentUpon>uctPhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctSearchNhanVien.resx">
-      <DependentUpon>uctSearchNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\uctThanhToan.resx">
       <DependentUpon>uctThanhToan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Views\uctThucDon.resx">
-      <DependentUpon>uctThucDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
@@ -340,17 +232,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Views\DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Views\DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="Views\DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
