@@ -137,7 +137,7 @@
             // btnPrint
             // 
             this.btnPrint.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.Location = new System.Drawing.Point(390, 521);
+            this.btnPrint.Location = new System.Drawing.Point(390, 613);
             this.btnPrint.Name = "btnPrint";
             this.btnPrint.Size = new System.Drawing.Size(145, 48);
             this.btnPrint.TabIndex = 2;
@@ -160,7 +160,7 @@
             this.picBarcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picBarcode.Location = new System.Drawing.Point(30, 438);
             this.picBarcode.Name = "picBarcode";
-            this.picBarcode.Size = new System.Drawing.Size(536, 67);
+            this.picBarcode.Size = new System.Drawing.Size(536, 159);
             this.picBarcode.TabIndex = 2;
             this.picBarcode.TabStop = false;
             // 
@@ -174,7 +174,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtMaSanPham);
             this.Name = "uctPrintBarcode";
-            this.Size = new System.Drawing.Size(608, 596);
+            this.Size = new System.Drawing.Size(608, 696);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

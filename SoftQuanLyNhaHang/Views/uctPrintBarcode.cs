@@ -25,10 +25,12 @@ namespace SoftQuanLyNhaHang.Views
             {
                 string barcode = txtMaSanPham.Text;
 
-                Bitmap bitm = new Bitmap(barcode.Length * 25, 30);
+                //Bitmap bitm = new Bitmap(barcode.Length * 10, 60);
+                Bitmap bitm = new Bitmap(300, 60);
                 using (Graphics graphic = Graphics.FromImage(bitm))
                 {
-                    Font newfont = new Font("3 of 9 Barcode", 20);
+                    //Font newfont = new Font("3 of 9 Barcode", 20);
+                    Font newfont = new Font("IDAHC39M Code 39 Barcode", 11);
                     PointF point = new PointF(2f, 2f);
                     SolidBrush black = new SolidBrush(Color.Black);
                     SolidBrush white = new SolidBrush(Color.White);
@@ -65,7 +67,7 @@ namespace SoftQuanLyNhaHang.Views
                         int height = picBarcode.Height;
                         Bitmap bmp = new Bitmap(width, height);
                         picBarcode.DrawToBitmap(bmp, new Rectangle(0, 0, width, height));
-                        bmp.Save(folderDialog.SelectedPath+"\\Barcode" + txtMaSanPham.Text, ImageFormat.Png);
+                        bmp.Save(folderDialog.SelectedPath+"\\Barcode" + txtMaSanPham.Text + ".png", ImageFormat.Png);
                         MessageBox.Show("Lưu thành công"); // your result
                     }
                 }
