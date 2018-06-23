@@ -95,7 +95,7 @@ namespace SoftQuanLyNhaHang.Views
 
 
 
-            OutputVoucherDetail curOutput = lstOutputVoucer.FirstOrDefault(p => p.ProductID == productid);
+            OutputVoucherDetailBO curOutput = lstOutputVoucer.FirstOrDefault(p => p.ProductID == productid);
 
             if (curOutput == null)
             {
@@ -109,13 +109,13 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-            dgvProductList.Rows.Add(intStep, objCurProduct.ProductName, quantity, curOutput.SalePrice, productid, outputid);
+            dgvProductList.Rows.Add(intStep, objCurProduct.ProductName, quantity, curOutput.RetailPrice, productid, outputid);
 
             double totalreturnmoney = 0;
 
             double.TryParse(labelTotalReturnMoney.Text, out totalreturnmoney);
 
-            totalreturnmoney += quantity * curOutput.SalePrice;
+            totalreturnmoney += quantity * curOutput.RetailPrice;
 
             labelTotalReturnMoney.Text = totalreturnmoney.ToString();
 
@@ -124,7 +124,7 @@ namespace SoftQuanLyNhaHang.Views
 
         ProductBO objCurProduct = null;
 
-        List<OutputVoucherDetail> lstOutputVoucer = null;
+        List<OutputVoucherDetailBO> lstOutputVoucer = null;
         private void btnHuy_Click(object sender, EventArgs e)
         {
             uctNhanVien_Load(sender, e);

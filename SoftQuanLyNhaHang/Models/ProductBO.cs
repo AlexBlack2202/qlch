@@ -13,12 +13,16 @@ namespace SoftQuanLyNhaHang.Models
         public double SellPrice { get; set; }
     }
 
-    public class OutputVoucherDetail
+    public class OutputVoucherDetailBO
     {
         public string ProductID { get; set; }
         public long OutputVoucherDetailID { get; set; }
         public long OutputVoucherID { get; set; }
-        public double SalePrice { get; set; }
+        public double RetailPrice { get; set; }
         public double Quantity { get; set; }
+        public string ProductName { get; set; }
+        public double Total { get; set; }
+
+        public string UnitBase { get; set; }
     }
 }

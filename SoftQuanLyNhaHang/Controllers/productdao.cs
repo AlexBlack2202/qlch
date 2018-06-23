@@ -320,7 +320,7 @@ namespace SoftQuanLyNhaHang.Controllers
 
         }
 
-        public List<OutputVoucherDetail> getlistoutputvoucherdetail(long outputvoucherid)
+        public List<OutputVoucherDetailBO> getlistoutputvoucherdetail(long outputvoucherid)
         {
 
             try
@@ -331,7 +331,7 @@ namespace SoftQuanLyNhaHang.Controllers
 
                 DataTable objTable = objData.ExecStoreToDataTable();
 
-                return objTable.ToList<OutputVoucherDetail>();
+                return objTable.ToList<OutputVoucherDetailBO>();
             }
             catch
             {
