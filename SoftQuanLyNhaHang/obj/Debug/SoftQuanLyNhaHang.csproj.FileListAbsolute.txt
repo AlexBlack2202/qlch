@@ -130,7 +130,28 @@ C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\EPPlus.dll
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\EPPlus.xml
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormInputVoucher.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormOutputVoucher.resources
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.Shared.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\FlashControlV71.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\ShockwaveFlashObjects.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\stdole.dll
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmOutputViewer.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojAssemblyReference.cache
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormInputVoucher.resources
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormOutputVoucher.resources
@@ -162,3 +183,6 @@ C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll.c
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\EPPlus.xml
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.CopyComplete
 C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPrintBarcode.resources
+=======
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormRepaid.resources
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4

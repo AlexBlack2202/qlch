@@ -90,6 +90,7 @@ C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll.conf
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\bin\Debug\MySql.Data.dll
+<<<<<<< HEAD
 C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csprojResolveAssemblyReference.cache
 C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll.config
 C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\bin\Debug\A4ULtd.Lib.Data.dll
@@ -100,3 +101,7 @@ C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.
 C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CopyComplete
 C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.dll
 C:\my project\qlch-master\qlch\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.pdb
+=======
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CoreCompileInputs.cache
+C:\Codes\RD\SoftQuanLyNhaHang\A4ULtd.Lib.Data\obj\Debug\A4ULtd.Lib.Data.csproj.CopyComplete
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4

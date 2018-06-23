@@ -32,6 +32,8 @@ namespace SoftQuanLyNhaHang.Views
         int stt = 1;
 
         double dbTotalBillModey = 0;
+
+        Dictionary<string, int> dicProductIndex = new Dictionary<string, int>();
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
             double dbQuantity = 0;
@@ -42,17 +44,38 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-
+            if (curProductBO == null)
+            {
+                MessageBox.Show("Mã sản phẩm không đúng");
+                return;
+            }
 
             dbTotalBillModey += curProductBO.SellPrice * dbQuantity;
 
             labelTotal.Text = dbTotalBillModey.ToString();
-            dgvDanhSachSanPham.Rows.Add(stt, curProductBO.ProductID, curProductBO.ProductName, dbQuantity, curProductBO.SellPrice, dbQuantity * curProductBO.SellPrice);
+
+            if (dicProductIndex.ContainsKey(curProductBO.ProductID))
+            {
+                int intCurRow = dicProductIndex[curProductBO.ProductID];
+
+                double dbCurQuantity = Convert.ToDouble(dgvDanhSachSanPham.Rows[intCurRow].Cells["quantity"].Value);
+
+                dbCurQuantity += dbQuantity;
+                dgvDanhSachSanPham.Rows[intCurRow].Cells["quantity"].Value = dbCurQuantity.ToString();
+                dgvDanhSachSanPham.Rows[intCurRow].Cells["total"].Value = (dbCurQuantity * curProductBO.SellPrice).ToString();
+            }
+            else
+            {
+
+
+                dgvDanhSachSanPham.Rows.Add(stt, curProductBO.ProductID, curProductBO.ProductName, dbQuantity, curProductBO.SellPrice, dbQuantity * curProductBO.SellPrice);
+                dicProductIndex.Add(curProductBO.ProductID, stt - 1);
+
+                stt++;
+            }
 
             textBoxBarCode.Text = "";
             textBoxSoLuong.Text = "";
-            stt++;
-
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -88,15 +111,20 @@ namespace SoftQuanLyNhaHang.Views
                 {
                     labelProductName.Text = objProductBO.ProductName;
                     curProductBO = objProductBO;
+                    btnThemMoi.Enabled = true;
                 }
                 else
                 {
                     labelProductName.Text = "";
+                    curProductBO = null;
+                    btnThemMoi.Enabled = false;
                 }
             }
             else
             {
                 labelProductName.Text = "";
+                curProductBO = null;
+                btnThemMoi.Enabled = false;
             }
         }
 
@@ -106,7 +134,9 @@ namespace SoftQuanLyNhaHang.Views
             double dbCurMoney = 0;
             double.TryParse(textBoxCustomerMoney.Text, out dbCurMoney);
 
-            double dbTotalModey = double.Parse(labelTotal.Text);
+            double dbTotalModey = 0;
+
+            double.TryParse(labelTotal.Text, out dbTotalModey);
 
             double dbReturn = dbCurMoney - dbTotalModey;
             labelReturnMoney.Text = dbReturn.ToString();
@@ -144,10 +174,19 @@ namespace SoftQuanLyNhaHang.Views
                 MessageBox.Show("Tạo phiếu xuất thành công");
             }
 
+            Views.frmOutputViewer frmOutputViewer = new frmOutputViewer();
+            frmOutputViewer.outputvoucherid = outputvoucherid;
+            frmOutputViewer.dataTable = dt;
+            double dbTotalModey = 0;
+
+            double.TryParse(labelTotal.Text, out dbTotalModey);
+            frmOutputViewer.total = dbTotalModey;
+            frmOutputViewer.ShowDialog();
+
             dgvDanhSachSanPham.Rows.Clear();
             labelTotal.Text = "";
             textBoxCustomerMoney.Text = "";
-            
+            dicProductIndex.Clear();
             stt = 1;
         }
     }

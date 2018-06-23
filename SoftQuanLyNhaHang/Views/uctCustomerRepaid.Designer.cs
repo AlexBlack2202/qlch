@@ -43,7 +43,8 @@
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InputPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.outputvoucherid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonCustomerRepaid = new System.Windows.Forms.Button();
@@ -69,11 +70,17 @@
             this.grQuanLyNV.Controls.Add(this.label2);
             this.grQuanLyNV.Controls.Add(this.textBoxBarCode);
             this.grQuanLyNV.Controls.Add(this.label5);
+<<<<<<< HEAD
             this.grQuanLyNV.Location = new System.Drawing.Point(33, 25);
             this.grQuanLyNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grQuanLyNV.Name = "grQuanLyNV";
             this.grQuanLyNV.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grQuanLyNV.Size = new System.Drawing.Size(542, 341);
+=======
+            this.grQuanLyNV.Location = new System.Drawing.Point(608, 61);
+            this.grQuanLyNV.Name = "grQuanLyNV";
+            this.grQuanLyNV.Size = new System.Drawing.Size(407, 266);
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.grQuanLyNV.TabIndex = 69;
             this.grQuanLyNV.TabStop = false;
             this.grQuanLyNV.Enter += new System.EventHandler(this.grQuanLyNV_Enter);
@@ -86,7 +93,11 @@
             this.btnThemMoi.Location = new System.Drawing.Point(390, 283);
             this.btnThemMoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemMoi.Name = "btnThemMoi";
+<<<<<<< HEAD
             this.btnThemMoi.Size = new System.Drawing.Size(112, 35);
+=======
+            this.btnThemMoi.Size = new System.Drawing.Size(90, 29);
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.btnThemMoi.TabIndex = 74;
             this.btnThemMoi.Text = "Thêm ";
             this.btnThemMoi.UseVisualStyleBackColor = false;
@@ -104,8 +115,12 @@
             // labelProductName
             // 
             this.labelProductName.AutoSize = true;
+<<<<<<< HEAD
             this.labelProductName.Location = new System.Drawing.Point(146, 188);
             this.labelProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.labelProductName.Location = new System.Drawing.Point(117, 121);
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(0, 20);
             this.labelProductName.TabIndex = 88;
@@ -164,12 +179,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(204, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 25);
+=======
+            this.label1.Location = new System.Drawing.Point(748, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 17);
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.label1.TabIndex = 72;
-            this.label1.Text = "Nhập Trả";
+            this.label1.Text = "NHẬP TRẢ";
             // 
             // label6
             // 
@@ -193,7 +214,8 @@
             this.stt,
             this.productname,
             this.quantity,
-            this.saleprice,
+            this.InputPrice,
+            this.Total,
             this.productid,
             this.outputvoucherid});
             this.dgvProductList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -204,6 +226,50 @@
             this.dgvProductList.Size = new System.Drawing.Size(806, 283);
             this.dgvProductList.TabIndex = 90;
             // 
+<<<<<<< HEAD
+=======
+            // buttonCustomerRepaid
+            // 
+            this.buttonCustomerRepaid.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonCustomerRepaid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCustomerRepaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCustomerRepaid.Location = new System.Drawing.Point(768, 466);
+            this.buttonCustomerRepaid.Name = "buttonCustomerRepaid";
+            this.buttonCustomerRepaid.Size = new System.Drawing.Size(75, 23);
+            this.buttonCustomerRepaid.TabIndex = 74;
+            this.buttonCustomerRepaid.Text = "Nhập trả";
+            this.buttonCustomerRepaid.UseVisualStyleBackColor = false;
+            this.buttonCustomerRepaid.Click += new System.EventHandler(this.buttonCustomerRepaid_Click);
+            // 
+            // labelTotalPrice
+            // 
+            this.labelTotalPrice.AutoSize = true;
+            this.labelTotalPrice.Location = new System.Drawing.Point(725, 402);
+            this.labelTotalPrice.Name = "labelTotalPrice";
+            this.labelTotalPrice.Size = new System.Drawing.Size(0, 13);
+            this.labelTotalPrice.TabIndex = 91;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(631, 402);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 13);
+            this.label8.TabIndex = 91;
+            this.label8.Text = "Tổng tiền trả lại khách:";
+            // 
+            // labelTotalReturnMoney
+            // 
+            this.labelTotalReturnMoney.AutoSize = true;
+            this.labelTotalReturnMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalReturnMoney.ForeColor = System.Drawing.Color.Red;
+            this.labelTotalReturnMoney.Location = new System.Drawing.Point(753, 402);
+            this.labelTotalReturnMoney.Name = "labelTotalReturnMoney";
+            this.labelTotalReturnMoney.Size = new System.Drawing.Size(15, 16);
+            this.labelTotalReturnMoney.TabIndex = 91;
+            this.labelTotalReturnMoney.Text = "0";
+            // 
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             // stt
             // 
             this.stt.DataPropertyName = "IdBan";
@@ -225,16 +291,22 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             // 
-            // saleprice
+            // InputPrice
             // 
-            this.saleprice.DataPropertyName = "DonGia";
-            this.saleprice.HeaderText = "Đơn Giá";
-            this.saleprice.Name = "saleprice";
-            this.saleprice.ReadOnly = true;
+            this.InputPrice.DataPropertyName = "DonGia";
+            this.InputPrice.HeaderText = "Đơn giá";
+            this.InputPrice.Name = "InputPrice";
+            this.InputPrice.ReadOnly = true;
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Thành tiền";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
             // 
             // productid
             // 
-            this.productid.HeaderText = "Mã Sản Phẩm";
+            this.productid.HeaderText = "Mã sản phẩm";
             this.productid.Name = "productid";
             this.productid.ReadOnly = true;
             this.productid.Visible = false;
@@ -358,7 +430,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn saleprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InputPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.DataGridViewTextBoxColumn productid;
         private System.Windows.Forms.DataGridViewTextBoxColumn outputvoucherid;
         private System.Windows.Forms.Label label4;

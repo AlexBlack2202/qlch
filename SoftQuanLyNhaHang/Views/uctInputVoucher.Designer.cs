@@ -44,12 +44,19 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dgvProductList = new System.Windows.Forms.DataGridView();
             this.buttonAddToDataBase = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ncc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inputprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inputprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grQuanLyNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
             this.SuspendLayout();
@@ -246,17 +253,21 @@
             this.buttonAddToDataBase.UseVisualStyleBackColor = false;
             this.buttonAddToDataBase.Click += new System.EventHandler(this.buttonAddToDataBase_Click);
             // 
+<<<<<<< HEAD
             // productid
+=======
+            // total
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             // 
-            this.productid.HeaderText = "Mã sản phẩm";
-            this.productid.Name = "productid";
-            this.productid.ReadOnly = true;
+            this.total.HeaderText = "Thành tiền";
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
             // 
-            // productname
+            // inputprice
             // 
-            this.productname.HeaderText = "Tên sản phẩm";
-            this.productname.Name = "productname";
-            this.productname.ReadOnly = true;
+            this.inputprice.HeaderText = "Đơn giá";
+            this.inputprice.Name = "inputprice";
+            this.inputprice.ReadOnly = true;
             // 
             // Ncc
             // 
@@ -270,17 +281,17 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             // 
-            // inputprice
+            // productname
             // 
-            this.inputprice.HeaderText = "Đơn giá";
-            this.inputprice.Name = "inputprice";
-            this.inputprice.ReadOnly = true;
+            this.productname.HeaderText = "Tên sản phẩm";
+            this.productname.Name = "productname";
+            this.productname.ReadOnly = true;
             // 
-            // total
+            // productid
             // 
-            this.total.HeaderText = "Thành tiền";
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
+            this.productid.HeaderText = "Mã sản phẩm";
+            this.productid.Name = "productid";
+            this.productid.ReadOnly = true;
             // 
             // uctInputVoucher
             // 
@@ -316,10 +327,13 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dgvProductList;
         private System.Windows.Forms.Button buttonAddToDataBase;
+<<<<<<< HEAD
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
+=======
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
         private System.Windows.Forms.DataGridViewTextBoxColumn productid;
         private System.Windows.Forms.DataGridViewTextBoxColumn productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ncc;

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SoftQuanLyNhaHang.Utils
 {
-   public class Utils
+    public class Utils
     {
         public static DataTable GetDataTableFromDGV(DataGridView dgv)
         {
@@ -35,5 +35,7 @@ namespace SoftQuanLyNhaHang.Utils
 
             return dt;
         }
+
+       
     }
 }
