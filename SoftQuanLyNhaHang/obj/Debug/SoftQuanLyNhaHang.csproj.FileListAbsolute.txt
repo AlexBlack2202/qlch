@@ -151,4 +151,38 @@ C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.Repor
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\stdole.dll
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmOutputViewer.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csprojAssemblyReference.cache
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormInputVoucher.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormOutputVoucher.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmDangNhap.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmMain.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.frmThanhToan.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctCustomerRepaid.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctProductDestroy.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctOutputVoucher.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctInputVoucher.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctproduct.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.cache
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Properties.Resources.resources
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.CoreCompileInputs.cache
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\EPPlus.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.pdb
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll.config
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\bin\Debug\EPPlus.xml
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.CopyComplete
+C:\my project\qlch-master\qlch\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctPrintBarcode.resources
+=======
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.FormRepaid.resources
+>>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4

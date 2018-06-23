@@ -31,29 +31,29 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.goiMonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new SoftQuanLyNhaHang.Views.DataSet1();
+            //this.dataSet1 = new SoftQuanLyNhaHang.Views.DataSet1();
             this.goiMonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.goiMonTableAdapter = new SoftQuanLyNhaHang.Views.DataSet1TableAdapters.GoiMonTableAdapter();
+            //this.goiMonTableAdapter = new SoftQuanLyNhaHang.Views.DataSet1TableAdapters.GoiMonTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.goiMonBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.goiMonBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // goiMonBindingSource1
             // 
             this.goiMonBindingSource1.DataMember = "GoiMon";
-            this.goiMonBindingSource1.DataSource = this.dataSet1;
+            //this.goiMonBindingSource1.DataSource = this.dataSet1;
             // 
             // dataSet1
             // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.dataSet1.DataSetName = "DataSet1";
+            //this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // goiMonBindingSource
             // 
             this.goiMonBindingSource.DataMember = "GoiMon";
-            this.goiMonBindingSource.DataSource = this.dataSet1;
+            //this.goiMonBindingSource.DataSource = this.dataSet1;
             this.goiMonBindingSource.CurrentChanged += new System.EventHandler(this.goiMonBindingSource_CurrentChanged);
             // 
             // reportViewer1
@@ -70,7 +70,7 @@
             // 
             // goiMonTableAdapter
             // 
-            this.goiMonTableAdapter.ClearBeforeFill = true;
+            //this.goiMonTableAdapter.ClearBeforeFill = true;
             // 
             // frmThanhToan
             // 
@@ -81,7 +81,7 @@
             this.Name = "frmThanhToan";
             this.Load += new System.EventHandler(this.frmThanhToan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.goiMonBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.goiMonBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -90,9 +90,9 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private DataSet1 dataSet1;
+        //private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource goiMonBindingSource;
-        private DataSet1TableAdapters.GoiMonTableAdapter goiMonTableAdapter;
+        //private DataSet1TableAdapters.GoiMonTableAdapter goiMonTableAdapter;
         private System.Windows.Forms.BindingSource goiMonBindingSource1;
     }
 }

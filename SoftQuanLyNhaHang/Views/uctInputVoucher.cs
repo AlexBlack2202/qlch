@@ -85,7 +85,7 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-            dgvProductList.Rows.Add(stt, textBoxBarCode.Text, labelProductName.Text, textBoxQuantity.Text, textBoxRetailPrice.Text, quantity * retailprice);
+            //dgvProductList.Rows.Add(stt, textBoxBarCode.Text, labelProductName.Text, textBoxQuantity.Text, textBoxRetailPrice.Text, quantity * retailprice);
             stt++;
 
             textBoxQuantity.Text = "0";
@@ -130,16 +130,16 @@ namespace SoftQuanLyNhaHang.Views
 
                 if (objProductBO != null)
                 {
-                    labelProductName.Text = objProductBO.ProductName;
+                    //labelProductName.Text = objProductBO.ProductName;
                 }
                 else
                 {
-                    labelProductName.Text = "";
+                    //labelProductName.Text = "";
                 }
             }
             else
             {
-                labelProductName.Text = "";
+                //labelProductName.Text = "";
             }
         }
 
@@ -173,6 +173,11 @@ namespace SoftQuanLyNhaHang.Views
 
             dgvProductList.Rows.Clear();
             stt = 1;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

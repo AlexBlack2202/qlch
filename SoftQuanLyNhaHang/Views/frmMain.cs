@@ -60,12 +60,12 @@ namespace SoftQuanLyNhaHang.Views
 
         private void quảnLýNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctNhanVien.uctNV, 4, "Quản lý nhân viên ");
+            //ThemTabPages(Views.uctNhanVien.uctNV, 4, "Quản lý nhân viên ");
         }
 
         private void quảnLýKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctKhachHang.uctKH, 4, "Quản lý  khách hàng");
+            //ThemTabPages(Views.uctKhachHang.uctKH, 4, "Quản lý  khách hàng");
         }
 
         private void menuItemDongTrang_Click(object sender, EventArgs e)
@@ -91,22 +91,22 @@ namespace SoftQuanLyNhaHang.Views
 
         private void lựaChọnKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctBan.uctban, 4, "Quản lý bàn");
+            //ThemTabPages(Views.uctBan.uctban, 4, "Quản lý bàn");
         }
         private void hệThốngKhuVựcToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctKhuVuc.uctKV, 4, "Hệ thống khu vực");
+            //ThemTabPages(Views.uctKhuVuc.uctKV, 4, "Hệ thống khu vực");
         }
 
         private void mónĂnToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctLoaiThucDon.uctLTD, 4, "Loại thực đơn");
+            //ThemTabPages(Views.uctLoaiThucDon.uctLTD, 4, "Loại thực đơn");
         }
 
 
         private void thứcUốngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctThucDon.uctTD, 4, "Danh sách thực đơn");
+            //ThemTabPages(Views.uctThucDon.uctTD, 4, "Danh sách thực đơn");
         }
 
         private void gọiMónToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace SoftQuanLyNhaHang.Views
 
         private void phânQuyềnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThemTabPages(Views.uctPhanQuyen.uctPQ, 4, "Phân quyền sử dụng ");
+            //ThemTabPages(Views.uctPhanQuyen.uctPQ, 4, "Phân quyền sử dụng ");
         }
 
         private void ctxtmenuTabBan_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -201,6 +201,11 @@ namespace SoftQuanLyNhaHang.Views
         private void InputReportToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void PrintBarcodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThemTabPages(new Views.uctPrintBarcode(), 4, "In barcode sản phẩm");
         }
     }
 }
