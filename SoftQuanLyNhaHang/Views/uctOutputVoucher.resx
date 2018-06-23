@@ -129,17 +129,16 @@
   <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD
+
   <metadata name="RetailPrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-=======
+    <value>True</value>
+  </metadata>
   <metadata name="SalePrice.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
     <value>True</value>
   </metadata>
   <metadata name="total.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="buttonPrintInvoice.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -193,6 +192,4 @@
         dovpxzCO768tcbSF28THivMD+cm0RxzFj2Ec319b4gLuW/kfChdaehFmQHMAAAAASUVORK5CYII=
 </value>
   </data>
-=======
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
 </root>

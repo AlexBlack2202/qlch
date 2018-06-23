@@ -70,17 +70,12 @@
             this.grQuanLyNV.Controls.Add(this.label2);
             this.grQuanLyNV.Controls.Add(this.textBoxBarCode);
             this.grQuanLyNV.Controls.Add(this.label5);
-<<<<<<< HEAD
             this.grQuanLyNV.Location = new System.Drawing.Point(33, 25);
             this.grQuanLyNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grQuanLyNV.Name = "grQuanLyNV";
             this.grQuanLyNV.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grQuanLyNV.Size = new System.Drawing.Size(542, 341);
-=======
-            this.grQuanLyNV.Location = new System.Drawing.Point(608, 61);
-            this.grQuanLyNV.Name = "grQuanLyNV";
-            this.grQuanLyNV.Size = new System.Drawing.Size(407, 266);
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
+
             this.grQuanLyNV.TabIndex = 69;
             this.grQuanLyNV.TabStop = false;
             this.grQuanLyNV.Enter += new System.EventHandler(this.grQuanLyNV_Enter);
@@ -93,11 +88,8 @@
             this.btnThemMoi.Location = new System.Drawing.Point(390, 283);
             this.btnThemMoi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemMoi.Name = "btnThemMoi";
-<<<<<<< HEAD
+
             this.btnThemMoi.Size = new System.Drawing.Size(112, 35);
-=======
-            this.btnThemMoi.Size = new System.Drawing.Size(90, 29);
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.btnThemMoi.TabIndex = 74;
             this.btnThemMoi.Text = "Thêm ";
             this.btnThemMoi.UseVisualStyleBackColor = false;
@@ -115,12 +107,8 @@
             // labelProductName
             // 
             this.labelProductName.AutoSize = true;
-<<<<<<< HEAD
             this.labelProductName.Location = new System.Drawing.Point(146, 188);
             this.labelProductName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-=======
-            this.labelProductName.Location = new System.Drawing.Point(117, 121);
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(0, 20);
             this.labelProductName.TabIndex = 88;
@@ -179,16 +167,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(204, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 25);
-=======
-            this.label1.Location = new System.Drawing.Point(748, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 17);
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             this.label1.TabIndex = 72;
             this.label1.Text = "NHẬP TRẢ";
             // 
@@ -226,8 +208,6 @@
             this.dgvProductList.Size = new System.Drawing.Size(806, 283);
             this.dgvProductList.TabIndex = 90;
             // 
-<<<<<<< HEAD
-=======
             // buttonCustomerRepaid
             // 
             this.buttonCustomerRepaid.BackColor = System.Drawing.SystemColors.Control;
@@ -269,7 +249,6 @@
             this.labelTotalReturnMoney.TabIndex = 91;
             this.labelTotalReturnMoney.Text = "0";
             // 
->>>>>>> 4641c3518ea571e8bd8d842b47e8bc57e095f0e4
             // stt
             // 
             this.stt.DataPropertyName = "IdBan";
