@@ -41,12 +41,11 @@
             this.label12 = new System.Windows.Forms.Label();
             this.dgvProductList = new System.Windows.Forms.DataGridView();
             this.buttonAddToDataBase = new System.Windows.Forms.Button();
-            this.Stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inputprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.inputprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grQuanLyNV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).BeginInit();
             this.SuspendLayout();
@@ -167,7 +166,6 @@
             this.dgvProductList.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgvProductList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProductList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Stt,
             this.productid,
             this.productname,
             this.quantity,
@@ -194,29 +192,11 @@
             this.buttonAddToDataBase.UseVisualStyleBackColor = false;
             this.buttonAddToDataBase.Click += new System.EventHandler(this.buttonAddToDataBase_Click);
             // 
-            // Stt
+            // total
             // 
-            this.Stt.HeaderText = "Stt";
-            this.Stt.Name = "Stt";
-            this.Stt.ReadOnly = true;
-            // 
-            // productid
-            // 
-            this.productid.HeaderText = "Mã sản phẩm";
-            this.productid.Name = "productid";
-            this.productid.ReadOnly = true;
-            // 
-            // productname
-            // 
-            this.productname.HeaderText = "Tên sản phẩm";
-            this.productname.Name = "productname";
-            this.productname.ReadOnly = true;
-            // 
-            // quantity
-            // 
-            this.quantity.HeaderText = "Số lượng";
-            this.quantity.Name = "quantity";
-            this.quantity.ReadOnly = true;
+            this.total.HeaderText = "Thành tiền";
+            this.total.Name = "total";
+            this.total.ReadOnly = true;
             // 
             // inputprice
             // 
@@ -224,11 +204,23 @@
             this.inputprice.Name = "inputprice";
             this.inputprice.ReadOnly = true;
             // 
-            // total
+            // quantity
             // 
-            this.total.HeaderText = "Thành tiền";
-            this.total.Name = "total";
-            this.total.ReadOnly = true;
+            this.quantity.HeaderText = "Số lượng";
+            this.quantity.Name = "quantity";
+            this.quantity.ReadOnly = true;
+            // 
+            // productname
+            // 
+            this.productname.HeaderText = "Tên sản phẩm";
+            this.productname.Name = "productname";
+            this.productname.ReadOnly = true;
+            // 
+            // productid
+            // 
+            this.productid.HeaderText = "Mã sản phẩm";
+            this.productid.Name = "productid";
+            this.productid.ReadOnly = true;
             // 
             // uctInputVoucher
             // 
@@ -264,7 +256,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DataGridView dgvProductList;
         private System.Windows.Forms.Button buttonAddToDataBase;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn productid;
         private System.Windows.Forms.DataGridViewTextBoxColumn productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;

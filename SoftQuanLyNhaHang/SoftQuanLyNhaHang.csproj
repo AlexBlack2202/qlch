@@ -108,6 +108,12 @@
       <DependentUpon>CrystalReportOutput.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Views\CrystalReportRepaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportRepaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Views\DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="Views\FormOutputVoucher.Designer.cs">
       <DependentUpon>FormOutputVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormRepaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormRepaid.Designer.cs">
+      <DependentUpon>FormRepaid.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmDangNhap.cs">
       <SubType>Form</SubType>
@@ -260,11 +272,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportOutput.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CrystalReportRepaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportRepaid.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FormInputVoucher.resx">
       <DependentUpon>FormInputVoucher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FormOutputVoucher.resx">
       <DependentUpon>FormOutputVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormRepaid.resx">
+      <DependentUpon>FormRepaid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>

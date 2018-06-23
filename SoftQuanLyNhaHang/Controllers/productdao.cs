@@ -143,7 +143,7 @@ namespace SoftQuanLyNhaHang.Controllers
                 {
                     string strProductID = tableData.Rows[intRow]["productid"].ToString();
                     double dbQuantity = Convert.ToDouble(tableData.Rows[intRow]["quantity"].ToString());
-                    double dbRetailPrice = Convert.ToDouble(tableData.Rows[intRow]["saleprice"].ToString());
+                    double dbRetailPrice = Convert.ToDouble(tableData.Rows[intRow]["InputPrice"].ToString());
                     long outputvoucherid = Convert.ToInt64(tableData.Rows[intRow]["outputvoucherid"].ToString());
                     objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
                     objData.AddParameter("@productid", strProductID);
@@ -182,7 +182,7 @@ namespace SoftQuanLyNhaHang.Controllers
                     string productid = tableData.Rows[intRow]["productid"].ToString();
 
                     string quantity = tableData.Rows[intRow]["quantity"].ToString();
-                    string retailprice = tableData.Rows[intRow]["retailprice"].ToString();
+                    string retailprice = tableData.Rows[intRow]["saleprice"].ToString();
                     objData.CreateNewStoredProcedure("pm_outputvoucherdetail_add");
                     objData.AddParameter("@productid", productid);
                     objData.AddParameter("@outputvoucherid", outvoucherid);

@@ -109,17 +109,18 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-            dgvProductList.Rows.Add(intStep, objCurProduct.ProductName, quantity, curOutput.RetailPrice, productid, outputid);
+            dgvProductList.Rows.Add(intStep, objCurProduct.ProductName, quantity, curOutput.SalePrice,quantity* curOutput.SalePrice, productid, outputid);
 
             double totalreturnmoney = 0;
 
             double.TryParse(labelTotalReturnMoney.Text, out totalreturnmoney);
 
-            totalreturnmoney += quantity * curOutput.RetailPrice;
+            totalreturnmoney += quantity * curOutput.SalePrice;
 
             labelTotalReturnMoney.Text = totalreturnmoney.ToString();
 
             textBoxBarCode.Focus();
+            intStep++;
         }
 
         ProductBO objCurProduct = null;
@@ -152,8 +153,12 @@ namespace SoftQuanLyNhaHang.Views
 
             if (curText != null && curText.Length > 5)
             {
-                long outputvoucherid = long.Parse(curText);
-                lstOutputVoucer = new Controllers.ProductDAO().getlistoutputvoucherdetail(outputvoucherid);
+                long outputvoucherid;
+
+                if (long.TryParse(curText, out outputvoucherid))
+                {
+                    lstOutputVoucer = new Controllers.ProductDAO().getlistoutputvoucherdetail(outputvoucherid);
+                }
             }
             else
             {
@@ -164,7 +169,10 @@ namespace SoftQuanLyNhaHang.Views
         private void textBoxBarCode_TextChanged(object sender, EventArgs e)
         {
             string strBarCode = textBoxBarCode.Text;
-
+            if (lstOutputVoucer == null || lstOutputVoucer.Count == 0)
+            {
+                return;
+            }
             if (!string.IsNullOrEmpty(strBarCode) && strBarCode.Length > 3)
             {
                 var curoutputdetail = lstOutputVoucer.SingleOrDefault(p => p.ProductID == strBarCode);
@@ -227,6 +235,20 @@ namespace SoftQuanLyNhaHang.Views
                     MessageBox.Show("Tạo phiếu xuất thành công");
 
                 }
+
+                Views.FormRepaid frmOutputViewer = new FormRepaid();
+                frmOutputViewer.inputvoucherid = inputvoucherid;
+                frmOutputViewer.dataTable = dt;
+                double dbTotalModey = 0;
+
+                double.TryParse(labelTotalReturnMoney.Text, out dbTotalModey);
+                frmOutputViewer.total = dbTotalModey;
+                frmOutputViewer.ShowDialog();
+
+
+                textBoxOutputVoucherID.Text = "";
+                textBoxBarCode.Text = "";
+                textBoxQuantity.Text = "";
 
                 dgvProductList.Rows.Clear();
                 intStep = 1;

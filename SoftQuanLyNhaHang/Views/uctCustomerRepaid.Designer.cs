@@ -47,7 +47,8 @@
             this.stt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.saleprice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InputPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.outputvoucherid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grQuanLyNV.SuspendLayout();
@@ -64,9 +65,9 @@
             this.grQuanLyNV.Controls.Add(this.label2);
             this.grQuanLyNV.Controls.Add(this.textBoxBarCode);
             this.grQuanLyNV.Controls.Add(this.label5);
-            this.grQuanLyNV.Location = new System.Drawing.Point(773, 60);
+            this.grQuanLyNV.Location = new System.Drawing.Point(608, 61);
             this.grQuanLyNV.Name = "grQuanLyNV";
-            this.grQuanLyNV.Size = new System.Drawing.Size(407, 297);
+            this.grQuanLyNV.Size = new System.Drawing.Size(407, 266);
             this.grQuanLyNV.TabIndex = 69;
             this.grQuanLyNV.TabStop = false;
             this.grQuanLyNV.Enter += new System.EventHandler(this.grQuanLyNV_Enter);
@@ -78,7 +79,7 @@
             this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemMoi.Location = new System.Drawing.Point(177, 217);
             this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(75, 23);
+            this.btnThemMoi.Size = new System.Drawing.Size(90, 29);
             this.btnThemMoi.TabIndex = 74;
             this.btnThemMoi.Text = "Thêm ";
             this.btnThemMoi.UseVisualStyleBackColor = false;
@@ -95,7 +96,7 @@
             // labelProductName
             // 
             this.labelProductName.AutoSize = true;
-            this.labelProductName.Location = new System.Drawing.Point(97, 122);
+            this.labelProductName.Location = new System.Drawing.Point(117, 121);
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(0, 13);
             this.labelProductName.TabIndex = 88;
@@ -149,11 +150,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(913, 40);
+            this.label1.Location = new System.Drawing.Point(748, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 72;
-            this.label1.Text = "Nhập Trả";
+            this.label1.Text = "NHẬP TRẢ";
             // 
             // label6
             // 
@@ -176,7 +177,8 @@
             this.stt,
             this.productname,
             this.quantity,
-            this.saleprice,
+            this.InputPrice,
+            this.Total,
             this.productid,
             this.outputvoucherid});
             this.dgvProductList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -191,7 +193,7 @@
             this.buttonCustomerRepaid.BackColor = System.Drawing.SystemColors.Control;
             this.buttonCustomerRepaid.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCustomerRepaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCustomerRepaid.Location = new System.Drawing.Point(1134, 483);
+            this.buttonCustomerRepaid.Location = new System.Drawing.Point(768, 466);
             this.buttonCustomerRepaid.Name = "buttonCustomerRepaid";
             this.buttonCustomerRepaid.Size = new System.Drawing.Size(75, 23);
             this.buttonCustomerRepaid.TabIndex = 74;
@@ -202,7 +204,7 @@
             // labelTotalPrice
             // 
             this.labelTotalPrice.AutoSize = true;
-            this.labelTotalPrice.Location = new System.Drawing.Point(890, 401);
+            this.labelTotalPrice.Location = new System.Drawing.Point(725, 402);
             this.labelTotalPrice.Name = "labelTotalPrice";
             this.labelTotalPrice.Size = new System.Drawing.Size(0, 13);
             this.labelTotalPrice.TabIndex = 91;
@@ -210,7 +212,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(796, 401);
+            this.label8.Location = new System.Drawing.Point(631, 402);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(116, 13);
             this.label8.TabIndex = 91;
@@ -219,9 +221,11 @@
             // labelTotalReturnMoney
             // 
             this.labelTotalReturnMoney.AutoSize = true;
-            this.labelTotalReturnMoney.Location = new System.Drawing.Point(918, 401);
+            this.labelTotalReturnMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTotalReturnMoney.ForeColor = System.Drawing.Color.Red;
+            this.labelTotalReturnMoney.Location = new System.Drawing.Point(753, 402);
             this.labelTotalReturnMoney.Name = "labelTotalReturnMoney";
-            this.labelTotalReturnMoney.Size = new System.Drawing.Size(13, 13);
+            this.labelTotalReturnMoney.Size = new System.Drawing.Size(15, 16);
             this.labelTotalReturnMoney.TabIndex = 91;
             this.labelTotalReturnMoney.Text = "0";
             // 
@@ -246,16 +250,22 @@
             this.quantity.Name = "quantity";
             this.quantity.ReadOnly = true;
             // 
-            // saleprice
+            // InputPrice
             // 
-            this.saleprice.DataPropertyName = "DonGia";
-            this.saleprice.HeaderText = "Đơn Giá";
-            this.saleprice.Name = "saleprice";
-            this.saleprice.ReadOnly = true;
+            this.InputPrice.DataPropertyName = "DonGia";
+            this.InputPrice.HeaderText = "Đơn giá";
+            this.InputPrice.Name = "InputPrice";
+            this.InputPrice.ReadOnly = true;
+            // 
+            // Total
+            // 
+            this.Total.HeaderText = "Thành tiền";
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
             // 
             // productid
             // 
-            this.productid.HeaderText = "Mã Sản Phẩm";
+            this.productid.HeaderText = "Mã sản phẩm";
             this.productid.Name = "productid";
             this.productid.ReadOnly = true;
             this.productid.Visible = false;
@@ -311,7 +321,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stt;
         private System.Windows.Forms.DataGridViewTextBoxColumn productname;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn saleprice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InputPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.DataGridViewTextBoxColumn productid;
         private System.Windows.Forms.DataGridViewTextBoxColumn outputvoucherid;
     }

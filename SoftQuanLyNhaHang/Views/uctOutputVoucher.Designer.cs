@@ -52,7 +52,7 @@
             this.ProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RetailPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SalePrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grDanhSachBan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachSanPham)).BeginInit();
@@ -81,7 +81,7 @@
             this.ProductID,
             this.ProductName,
             this.Quantity,
-            this.RetailPrice,
+            this.SalePrice,
             this.total});
             this.dgvDanhSachSanPham.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvDanhSachSanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -314,12 +314,12 @@
             this.Quantity.Name = "Quantity";
             this.Quantity.ReadOnly = true;
             // 
-            // RetailPrice
+            // SalePrice
             // 
-            this.RetailPrice.DataPropertyName = "DonGia";
-            this.RetailPrice.HeaderText = "Đơn Giá";
-            this.RetailPrice.Name = "RetailPrice";
-            this.RetailPrice.ReadOnly = true;
+            this.SalePrice.DataPropertyName = "DonGia";
+            this.SalePrice.HeaderText = "Đơn Giá";
+            this.SalePrice.Name = "SalePrice";
+            this.SalePrice.ReadOnly = true;
             // 
             // total
             // 
@@ -377,7 +377,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RetailPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SalePrice;
         private System.Windows.Forms.DataGridViewTextBoxColumn total;
     }
 }
