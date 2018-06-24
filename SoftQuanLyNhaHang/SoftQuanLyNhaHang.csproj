@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86A866C7-D891-41CE-B2E9-42F2C10DC65B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftQuanLyNhaHang</RootNamespace>
+    <AssemblyName>PostClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BanCtrl.cs" />
+    <Compile Include="Controllers\DangNhap.cs" />
+    <Compile Include="Controllers\GoiMonCtrl.cs" />
+    <Compile Include="Controllers\HoaDonCtrl.cs" />
+    <Compile Include="Controllers\KhachHangCtrl.cs" />
+    <Compile Include="Controllers\KhuVucCtrl.cs" />
+    <Compile Include="Controllers\LoaiThucDonCtrl.cs" />
+    <Compile Include="Controllers\NhanVienCtrl.cs" />
+    <Compile Include="Controllers\PhanQuyenCtrl.cs" />
+    <Compile Include="Controllers\productdao.cs" />
+    <Compile Include="Controllers\ThucDonCtrl.cs" />
+    <Compile Include="Models\BanMod.cs" />
+    <Compile Include="Models\connection.cs" />
+    <Compile Include="Models\DangNhap.cs" />
+    <Compile Include="Models\GoiMonMod.cs" />
+    <Compile Include="Models\HoaDonMod.cs" />
+    <Compile Include="Models\KhachHangMod.cs" />
+    <Compile Include="Models\KhuVucMod.cs" />
+    <Compile Include="Models\LoaiThucDonMod.cs" />
+    <Compile Include="Models\NhanVienMod.cs" />
+    <Compile Include="Models\OutputVoucherBO.cs" />
+    <Compile Include="Models\PhanQuyenMod.cs" />
+    <Compile Include="Models\ProductBO.cs" />
+    <Compile Include="Models\ThucDonMod.cs" />
+    <Compile Include="Models\UserControlBO.cs" />
+    <Compile Include="Utils\Config.cs" />
+    <Compile Include="Utils\ExtensionHelper.cs" />
+    <Compile Include="Utils\Utils.cs" />
+    <Compile Include="Views\CrystalReportOutput.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportOutput.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\CrystalReportRepaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportRepaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\FormInputVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormInputVoucher.Designer.cs">
+      <DependentUpon>FormInputVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormOutputVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormOutputVoucher.Designer.cs">
+      <DependentUpon>FormOutputVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormRepaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormRepaid.Designer.cs">
+      <DependentUpon>FormRepaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmOutputViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmOutputViewer.Designer.cs">
+      <DependentUpon>frmOutputViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctCustomerRepaid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctCustomerRepaid.Designer.cs">
+      <DependentUpon>uctCustomerRepaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctPrintBarcode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctPrintBarcode.Designer.cs">
+      <DependentUpon>uctPrintBarcode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctProductDestroy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctProductDestroy.Designer.cs">
+      <DependentUpon>uctProductDestroy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctOutputVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctOutputVoucher.Designer.cs">
+      <DependentUpon>uctOutputVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctInputVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctInputVoucher.Designer.cs">
+      <DependentUpon>uctInputVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctproduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctproduct.Designer.cs">
+      <DependentUpon>uctproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\uctThanhToan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\uctThanhToan.Designer.cs">
+      <DependentUpon>uctThanhToan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\CrystalReportOutput.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportOutput.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\CrystalReportRepaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportRepaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormInputVoucher.resx">
+      <DependentUpon>FormInputVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormOutputVoucher.resx">
+      <DependentUpon>FormOutputVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormRepaid.resx">
+      <DependentUpon>FormRepaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmOutputViewer.resx">
+      <DependentUpon>frmOutputViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report1.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctCustomerRepaid.resx">
+      <DependentUpon>uctCustomerRepaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctPrintBarcode.resx">
+      <DependentUpon>uctPrintBarcode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctProductDestroy.resx">
+      <DependentUpon>uctProductDestroy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctOutputVoucher.resx">
+      <DependentUpon>uctOutputVoucher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctInputVoucher.resx">
+      <DependentUpon>uctInputVoucher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctproduct.resx">
+      <DependentUpon>uctproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\uctThanhToan.resx">
+      <DependentUpon>uctThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\A4ULtd.Lib.Data\A4ULtd.Lib.Data.csproj">
+      <Project>{78d6c0cc-5541-4b2c-a11b-e496fdde1224}</Project>
+      <Name>A4ULtd.Lib.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

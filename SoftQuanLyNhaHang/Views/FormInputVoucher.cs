@@ -29,7 +29,7 @@ namespace SoftQuanLyNhaHang.Views
             {
                 try
                 {
-                    var newFile = new FileInfo("Input_" + dateTime.ToString("yyyyMMdd") + ".xlsx");
+                    var newFile = new FileInfo("Report/Input_" + dateTime.ToString("yyyyMMdd") + ".xlsx");
                     using (ExcelPackage pck = new ExcelPackage(newFile))
                     {
                         ExcelWorksheet ws = pck.Workbook.Worksheets.Add("Accounts");
