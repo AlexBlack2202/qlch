@@ -14,9 +14,6 @@ C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.View
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctproduct.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.Views.uctThanhToan.resources
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.csproj.GenerateResource.Cache
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe.config
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.exe
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\SoftQuanLyNhaHang.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.dll
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -44,5 +41,8 @@ C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\CrystalDecisions.Repor
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\stdole.dll
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\A4ULtd.Lib.Data.pdb
 C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\EPPlus.xml
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.exe
-C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\SoftQuanLyNhaHang.pdb
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\PostClient.exe.config
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\PostClient.exe
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\bin\Debug\PostClient.pdb
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\PostClient.exe
+C:\Codes\RD\SoftQuanLyNhaHang\SoftQuanLyNhaHang\obj\Debug\PostClient.pdb

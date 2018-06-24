@@ -13,56 +13,82 @@ namespace SoftQuanLyNhaHang.Controllers
     public class ProductDAO
     {
         A4ULtd.Lib.Data.IData objData = Data.CreateData(Utils.Config.DBCon);
-        public int AddProduct(string strbarcode, string strproductname, double sellprice)
+        public int AddProduct(string strbarcode, string strproductname, double sellprice, string description, int maingroupid)
         {
-
+            int intErrorCode = 0;
             try
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_product_add");
-                objData.AddParameter("@productid", strbarcode);
+                objData.AddParameter("@productid", strbarcode.Trim());
                 objData.AddParameter("@productname", strproductname);
                 objData.AddParameter("@sellprice", sellprice);
                 objData.ExecStoreToString();
             }
             catch (Exception objEx)
             {
-                return 1;
+                intErrorCode = 1;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return 0;
+            return intErrorCode;
         }
 
         public bool UpdateProductSellPrice(string strbarcode, double sellprice)
         {
-
+            bool isUpdated = true;
             try
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_product_updatesellprice");
-                objData.AddParameter("@productid", strbarcode);
+                objData.AddParameter("@productid", strbarcode.Trim());
                 objData.AddParameter("@sellprice", sellprice);
                 objData.ExecStoreToString();
             }
             catch (Exception objEx)
             {
-                return false;
+                isUpdated = false;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return true;
+            return isUpdated;
+        }
+
+        public bool UpdateProduct(string strbarcode, string productname, double sellprice, string description, int maingroupid)
+        {
+            bool isUpdated = true;
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_product_update");
+                objData.AddParameter("@productid", strbarcode.Trim());
+                objData.AddParameter("@productname", productname);
+                objData.AddParameter("@maingroupid", maingroupid);
+                objData.AddParameter("@description", description);
+                objData.AddParameter("@sellprice", sellprice);
+                objData.ExecStoreToString();
+            }
+            catch (Exception objEx)
+            {
+                isUpdated = false;
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return isUpdated;
         }
 
         public long InputVoucherAdd(int intcreateduserid, int intinputtype)
         {
-
+            long inputvoucherid = 0;
             try
             {
                 objData.Connect();
@@ -71,19 +97,23 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.AddParameter("@createduserid", intcreateduserid);
                 string strValue = objData.ExecStoreToString();
 
-                return Convert.ToInt64(strValue);
+                inputvoucherid = Convert.ToInt64(strValue);
             }
             catch (Exception objEx)
             {
-                return -1;
+                inputvoucherid = -1;
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
-            return -1;
+            return inputvoucherid;
         }
 
         public long OutputVoucherAdd(int intcreateduserid, int intoutputtype)
         {
-
+            long outputvoucherid = 0;
             try
             {
                 objData.Connect();
@@ -92,14 +122,18 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.AddParameter("@creatteduserid", intcreateduserid);
                 string strValue = objData.ExecStoreToString();
 
-                return Convert.ToInt64(strValue);
+                outputvoucherid = Convert.ToInt64(strValue);
             }
             catch
             {
-                return -1;
+                outputvoucherid = -1;
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
-            return -1;
+            return outputvoucherid;
         }
 
 
@@ -111,17 +145,17 @@ namespace SoftQuanLyNhaHang.Controllers
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_input_voucher_detail_add");
-                objData.AddParameter("@productid", productid);
+                objData.AddParameter("@productid", productid.Trim());
                 objData.AddParameter("@inputvoucherid", inputvoucherid);
                 objData.AddParameter("@quantity", quantity);
                 objData.AddParameter("@price", retailprice);
                 string strValue = objData.ExecStoreToString();
 
-                returnval= Convert.ToInt64(strValue);
+                returnval = Convert.ToInt64(strValue);
             }
             catch (Exception objEx)
             {
-                returnval= - 1;
+                returnval = -1;
             }
             finally
             {
@@ -151,7 +185,7 @@ namespace SoftQuanLyNhaHang.Controllers
                     objData.AddParameter("@quantity", dbQuantity);
                     objData.AddParameter("@price", dbRetailPrice);
                     objData.AddParameter("@outputvoucherid", outputvoucherid);
-                    
+
                     string strValue = objData.ExecStoreToString();
                 }
                 objData.CommitTransaction();
@@ -208,76 +242,85 @@ namespace SoftQuanLyNhaHang.Controllers
 
         public long OutputVoucherDetailAdd(string productid, long outvoucherid, double quantity, double retailprice)
         {
-
+            long returnval = 0;
             try
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_outputvoucherdetail_add");
-                objData.AddParameter("@productid", productid);
+                objData.AddParameter("@productid", productid.Trim());
                 objData.AddParameter("@outputvoucherid", outvoucherid);
                 objData.AddParameter("@quantity", quantity);
                 objData.AddParameter("@sellprice", retailprice);
                 string strValue = objData.ExecStoreToString();
 
-                return Convert.ToInt64(strValue);
+                returnval = Convert.ToInt64(strValue);
             }
             catch (Exception objEx)
             {
-                return -1;
+                returnval = -1;
             }
             finally
             {
                 objData.Disconnect();
             }
 
-            return -1;
+            return returnval;
         }
 
         public Models.ProductBO getproductbybarcode(string barcode)
         {
-
+            ProductBO objProductBO = null;
             try
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("pm_product_getproductbybarcode");
-                objData.AddParameter("@productid", barcode);
+                objData.AddParameter("@productid", barcode.Trim());
 
                 DataTable objTable = objData.ExecStoreToDataTable();
 
-                return objTable.ToList<ProductBO>().First();
+                objProductBO = objTable.ToList<ProductBO>().First();
             }
             catch
             {
-                return null;
+
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
-
+            return objProductBO;
         }
 
 
         public DataTable GetInventory()
         {
-
+            DataTable objTable = null;
             try
             {
                 objData.Connect();
                 objData.CreateNewStoredProcedure("bi_etl_inventory_getall");
 
-                DataTable objTable = objData.ExecStoreToDataTable();
+                objTable = objData.ExecStoreToDataTable();
 
                 return objTable;
             }
             catch (Exception objEx)
             {
-                return null;
+
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
-
+            return objTable;
         }
 
         public DataTable GetReportOutputByDate(DateTime dtBeginDate)
         {
             dtBeginDate = dtBeginDate.Date;
+            DataTable objTable = null;
             DateTime dtEndDate = dtBeginDate.AddDays(1);
             try
             {
@@ -285,22 +328,26 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.CreateNewStoredProcedure("pm_outputvoucherdetail_exportbydate");
                 objData.AddParameter("@begindate", dtBeginDate);
                 objData.AddParameter("@enddate", dtEndDate);
-                DataTable objTable = objData.ExecStoreToDataTable();
+                objTable = objData.ExecStoreToDataTable();
 
                 return objTable;
             }
             catch (Exception objEx)
             {
-                return null;
+
             }
-
-
+            finally
+            {
+                objData.Disconnect();
+            }
+            return objTable;
         }
 
 
         public DataTable GetReportInputByDate(DateTime dtBeginDate)
         {
             dtBeginDate = dtBeginDate.Date;
+            DataTable objTable = null;
             DateTime dtEndDate = dtBeginDate.AddDays(1);
             try
             {
@@ -308,21 +355,26 @@ namespace SoftQuanLyNhaHang.Controllers
                 objData.CreateNewStoredProcedure("pm_outputvoucherdetail_inputbydate");
                 objData.AddParameter("@begindate", dtBeginDate);
                 objData.AddParameter("@enddate", dtEndDate);
-                DataTable objTable = objData.ExecStoreToDataTable();
+                objTable = objData.ExecStoreToDataTable();
 
                 return objTable;
             }
             catch (Exception objEx)
             {
-                return null;
+
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
+            return objTable;
 
         }
 
         public List<OutputVoucherDetailBO> getlistoutputvoucherdetail(long outputvoucherid)
         {
-
+            List<OutputVoucherDetailBO> lstopv = new List<OutputVoucherDetailBO>();
             try
             {
                 objData.Connect();
@@ -331,14 +383,67 @@ namespace SoftQuanLyNhaHang.Controllers
 
                 DataTable objTable = objData.ExecStoreToDataTable();
 
-                return objTable.ToList<OutputVoucherDetailBO>();
+                lstopv = objTable.ToList<OutputVoucherDetailBO>();
             }
             catch
             {
-                return null;
+
+            }
+            finally
+            {
+                objData.Disconnect();
             }
 
+            return lstopv;
+        }
 
+        public DataTable maingroup_getall()
+        {
+            DataTable objtable = new DataTable();
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_maingroup_getall");
+
+                objtable = objData.ExecStoreToDataTable();
+
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return objtable;
+        }
+
+        public string generateproductid()
+        {
+            string productid = "";
+            try
+            {
+                objData.Connect();
+                objData.CreateNewStoredProcedure("pm_autogeneratebarcode_created");
+
+                DataTable objTable = objData.ExecStoreToDataTable();
+                productid = objTable.Rows[0][0].ToString();
+
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                objData.Disconnect();
+            }
+
+            return productid;
         }
     }
 }

@@ -11,6 +11,8 @@ namespace SoftQuanLyNhaHang.Models
         public string ProductID { get; set; }
         public string ProductName { get; set; }
         public double SellPrice { get; set; }
+        public int Maingroupid { get; set; }
+        public string descriptionproduct { get; set; }
     }
 
     public class OutputVoucherDetailBO

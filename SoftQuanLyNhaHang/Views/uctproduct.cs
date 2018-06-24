@@ -34,7 +34,12 @@ namespace SoftQuanLyNhaHang.Views
         //}
         private void uctproduct_Load(object sender, EventArgs e)
         {
+            DataTable dt = new Controllers.ProductDAO().maingroup_getall();
 
+            comboBoxMainGroup.DataSource = dt;
+            comboBoxMainGroup.DisplayMember = "maingroupname";
+            comboBoxMainGroup.ValueMember = "maingroupid";
+            //comboBoxMainGroup.Enabled = true;
         }
 
 
@@ -112,7 +117,11 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
-            int result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice);
+            string description = textboxDescription.Text;
+
+            int maingroup = (int)comboBoxMainGroup.SelectedValue;
+
+            int result = new Controllers.ProductDAO().AddProduct(strBarcode, strproductname, dbSellPrice, description, maingroup);
 
             if (result != 0)
             {
@@ -125,8 +134,9 @@ namespace SoftQuanLyNhaHang.Views
             txproductname.Text = "";
 
             textBoxSellPrice.Text = "-1";
+            textboxDescription.Text = ".";
 
-
+            buttonAutoGenerateBarcode.Enabled = true;
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -142,15 +152,24 @@ namespace SoftQuanLyNhaHang.Views
                 return;
             }
 
+            if (txtbarcode.Text.Trim() != curProductBO.ProductID)
+            {
+                MessageBox.Show("Mã sản phẩm đã bị thay đổi");
+                return;
+            }
             double dbSellPrice = -1;
 
-            //if (string.IsNullOrEmpty(textBoxRetailPriceEdit.Text) || !double.TryParse(textBoxRetailPriceEdit.Text, out dbSellPrice))
+            if (string.IsNullOrEmpty(textBoxSellPrice.Text) || !double.TryParse(textBoxSellPrice.Text, out dbSellPrice))
             {
                 MessageBox.Show("Giá bán không hợp lệ");
                 return;
             }
 
-            bool result = new Controllers.ProductDAO().UpdateProductSellPrice(curProductBO.ProductID, dbSellPrice);
+
+            int maingroup = (int)comboBoxMainGroup.SelectedValue;
+
+
+            bool result = new Controllers.ProductDAO().UpdateProduct(txtbarcode.Text, txproductname.Text, dbSellPrice, textboxDescription.Text, maingroup);
 
             if (!result)
             {
@@ -162,12 +181,19 @@ namespace SoftQuanLyNhaHang.Views
                 MessageBox.Show("Cập nhật thành công");
             }
 
-            //textBoxProductIDEditPrice.Text = "";
-            //labelProductNameEdit.Text = "";
+            txproductname.Text = "";
+            textboxDescription.Text = ".";
+            // labelProductNameEdit.Text = "";
 
-            //textBoxRetailPriceEdit.Text = "-1";
+            textBoxSellPrice.Text = "-1";
+
+            btnSua.Enabled = false;
+            btnThemMoi.Enabled = true;
+            buttonAutoGenerateBarcode.Enabled = true;
+            curProductBO = null;
 
 
+            txtbarcode.Text = "";
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -204,7 +230,34 @@ namespace SoftQuanLyNhaHang.Views
 
         private void txtbarcode_TextChanged(object sender, EventArgs e)
         {
+            string strBarCode = txtbarcode.Text;
+            if (!string.IsNullOrEmpty(strBarCode) && strBarCode.Length > 3)
+            {
+                ProductBO objProductBO = new ProductDAO().getproductbybarcode(strBarCode);
 
+                if (objProductBO != null)
+                {
+                    txproductname.Text = objProductBO.ProductName;
+                    textBoxSellPrice.Text = objProductBO.SellPrice.ToString();
+
+                    textboxDescription.Text = objProductBO.descriptionproduct;
+                    comboBoxMainGroup.SelectedValue = objProductBO.Maingroupid;
+
+                    btnThemMoi.Enabled = false;
+                    btnSua.Enabled = true;
+                    curProductBO = objProductBO;
+                }
+            }
+        }
+
+        private void buttonAutoGenerateBarcode_Click(object sender, EventArgs e)
+        {
+            string productid = new ProductDAO().generateproductid();
+
+            txtbarcode.Text = productid;
+
+            buttonAutoGenerateBarcode.Enabled = false;
+            txproductname.Focus();
         }
     }
 }
